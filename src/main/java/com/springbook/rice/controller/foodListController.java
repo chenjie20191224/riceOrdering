@@ -1,0 +1,128 @@
+package com.springbook.rice.controller;
+
+import com.springbook.rice.common.domain.CategoryFood;
+import com.springbook.rice.common.domain.Food;
+import com.springbook.rice.common.utils.JSONPhotos;
+import com.springbook.rice.common.utils.JSONResult;
+import com.springbook.rice.mapper.BusinessMapper;
+import com.springbook.rice.mapper.CategoryFoodMapper;
+import com.springbook.rice.mapper.FoodMapper;
+import com.springbook.rice.service.CategoryFoodService;
+import com.springbook.rice.service.FoodService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.util.List;
+
+@Controller
+public class foodListController {
+    @Autowired
+    FoodService foodService;
+  @Autowired
+    CategoryFoodService categoryFoodService;
+  @Autowired
+    BusinessMapper businessMapper;
+
+
+//跳转菜品列表并显示
+    @RequestMapping("/food-list")
+    public String foodList(Model model,String category){
+        //    菜品类别下拉框选择
+        if (category!=null){
+            List<Food> foods = foodService.selectByCategory(category);
+            model.addAttribute("Foods",foods);
+            List<CategoryFood> categoryFoods = categoryFoodService.selectAll();
+            model.addAttribute("categoryFoods",categoryFoods);
+        }
+        if (category==null||category.equals("菜品类别")){
+            foodService.selectByCategory("初始化菜品类别下拉框的选择状态");
+            List<Food> foods = foodService.selectAll();
+            model.addAttribute("Foods",foods);
+            List<CategoryFood> categoryFoods = categoryFoodService.selectAll();
+            model.addAttribute("categoryFoods",categoryFoods);
+        }
+
+        return "food-list";
+    }
+
+
+    @RequestMapping("/food-edit")
+    public String foodEdit(String foodName,Model model){
+        Food food = foodService.selectByfoodName(foodName);
+        model.addAttribute("food",food);
+        List<CategoryFood> categoryFoods = categoryFoodService.selectAll();
+        model.addAttribute("categoryFoods",categoryFoods);
+        return "food-edit";
+    }
+
+    @RequestMapping("/food-add")
+    public String foodAdd(Model model){
+        model.addAttribute("categoryFoods",categoryFoodService.selectAll());
+        model.addAttribute("packFEE",businessMapper.selectByPrimaryKey(1).getPackFee());
+        return "food-add";
+    }
+
+    @RequestMapping("/foodAdd")
+    @ResponseBody
+    public void foodADD(Food food){
+        foodService.foodAdd(food);
+    }
+
+//    菜品更新按钮点击  foodUpdate
+    @RequestMapping("/foodUpdate")
+    @ResponseBody
+    public void foodUpdate(Food food){
+        foodService.foodUpdate(food);
+     }
+
+
+//    菜品icon上传页面 foodIcon-add
+    @RequestMapping("/foodIcon-add")
+public String businessEdit() {
+    return "foodIcon-add";
+}
+
+//    上传菜品图片
+    @PostMapping("/uploadFood")
+    @ResponseBody
+    public JSONPhotos filesUpload(@RequestParam("file") MultipartFile file) {
+
+        return foodService.uploadPhotos(file);
+    }
+
+//    确认选择图片
+   @PostMapping("/submitIcon")
+   @ResponseBody
+   public void submitIcon() {
+    foodService.iconConfirm();
+  }
+
+
+// 菜品添加时验证food是否已存在和菜品封面是否添加   foodVerify
+    @PostMapping("/foodVerify")
+    @ResponseBody
+    public JSONResult foodVerify(String foodName) {
+        return foodService.foodVerify(foodName);
+}
+//菜品更新时验证更新的菜品名是否存在
+      @PostMapping("/foodNameVerify")
+      @ResponseBody
+      public JSONResult foodNameVerify(String foodName,String category) {
+
+          System.out.println(category);
+        return foodService.foodNameVerify(foodName,category);
+     }
+//菜品删除
+    @PostMapping("/foodDelet")
+    @ResponseBody
+    public void foodDelet(String[] foodNames){
+        System.out.println(foodNames);
+        foodService.foodDelet(foodNames);
+    }
+}
