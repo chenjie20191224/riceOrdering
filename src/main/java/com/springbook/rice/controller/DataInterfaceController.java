@@ -170,6 +170,7 @@ public class DataInterfaceController {
     @RequestMapping("/orderDetail")
     @ResponseBody
     public List<OrderDetail> orderDetail(String orderId){
+        System.out.println(orderId);
         OrderDetailExample orderDetailExample=new OrderDetailExample();
         orderDetailExample.createCriteria().andOrderIdEqualTo(orderId);
         return orderDetailMapper.selectByExample(orderDetailExample);
