@@ -1,10 +1,11 @@
 package com.springbook.rice;
 
-import com.springbook.rice.common.domain.Business;
-import com.springbook.rice.common.domain.Food;
-import com.springbook.rice.common.domain.FoodExample;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.springbook.rice.common.domain.*;
 import com.springbook.rice.mapper.BusinessMapper;
 import com.springbook.rice.mapper.FoodMapper;
+import com.springbook.rice.mapper.OrderFoodMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,14 +18,18 @@ class RiceApplicationTests {
     BusinessMapper businessMapper;
     @Autowired
     FoodMapper foodMapper;
+    @Autowired
+    OrderFoodMapper orderFoodMapper;
     @Test
     void contextLoads() {
+        OrderFoodExample orderFoodExample=new OrderFoodExample();
+        orderFoodExample.createCriteria().andOrderTimeBetween("2020年01月19日","2020年01月20日 23:59");
+        List<OrderFood> orderFoods = orderFoodMapper.selectByExample(orderFoodExample);
+        for (OrderFood orderFood : orderFoods) {
+            System.out.println(orderFood.getOrderTime());
+        }
 
-        FoodExample foodExample=new FoodExample();
-        List<Food> foods = foodMapper.selectByExample(foodExample);
-      for (int i=0;i<foods.size();i++){
-          System.out.println(foods.get(i).getFoodName());
-      }
+
 
     }
 

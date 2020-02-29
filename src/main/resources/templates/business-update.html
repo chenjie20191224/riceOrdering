@@ -18,7 +18,9 @@
 
         </script>
     </head>
+
     <body>
+
         <div class="x-nav">
           <span class="layui-breadcrumb">
             <a href="">首页</a>
@@ -214,7 +216,8 @@
                                     <td th:if="${business.getBusinessLicense().equals('空')}">空</td>
 
                                     <td th:if="${!business.getBusinessLicense().equals('空')}">
-                                    <img  th:src="${business.getBusinessLicense()}" width="200" alt="">
+                                        <img class="pimg" th:src="${business.getBusinessLicense()}" style="width:200px;height: 80px" alt="">
+
                                         <a style="float: right" title="编辑"  onclick="xadmin.open('编辑','/bannerEdit?banners=营业资质',650,450)" href="javascript:;">
                                             <span class="layui-btn layui-btn-normal layui-btn-mini">更新</span>
                                         </a>

@@ -13,8 +13,6 @@ public class Food {
 
     private String icon;
 
-    private BigDecimal deliveryFee;
-
     private BigDecimal packFee;
 
     public String getFoodName() {
@@ -55,14 +53,6 @@ public class Food {
 
     public void setIcon(String icon) {
         this.icon = icon == null ? null : icon.trim();
-    }
-
-    public BigDecimal getDeliveryFee() {
-        return deliveryFee;
-    }
-
-    public void setDeliveryFee(BigDecimal deliveryFee) {
-        this.deliveryFee = deliveryFee;
     }
 
     public BigDecimal getPackFee() {

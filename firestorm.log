@@ -1,791 +1,438 @@
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"TVFOj7Tiz1aE8+77vpHiYA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"TVFOj7Tiz1aE8+77vpHiYA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"zZignuBKhM8vzF9eZcfemQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"zZignuBKhM8vzF9eZcfemQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"zZignuBKhM8vzF9eZcfemQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"zZignuBKhM8vzF9eZcfemQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"XVPqRWVO8JzsDW2795LvqQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"XVPqRWVO8JzsDW2795LvqQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"XVPqRWVO8JzsDW2795LvqQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"3PH1KAJXJIDBwYQwRncf0A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"3PH1KAJXJIDBwYQwRncf0A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"0oF4grZYCX2z6Opv+Gc9cg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"AH9QEHOi3hMPxOhh93ptRw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"AH9QEHOi3hMPxOhh93ptRw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vEZqF8Fv1vjxtuh+vHJfWg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"HoPiqvfDLe25BE2I00\/urA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vEZqF8Fv1vjxtuh+vHJfWg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vEZqF8Fv1vjxtuh+vHJfWg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vEZqF8Fv1vjxtuh+vHJfWg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vEZqF8Fv1vjxtuh+vHJfWg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"xpoW3mf5gMjH7gZ8Zddv+A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"NAtmM1xz0MC2pLV+Fq9V0Q==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vEZqF8Fv1vjxtuh+vHJfWg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vEZqF8Fv1vjxtuh+vHJfWg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vEZqF8Fv1vjxtuh+vHJfWg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"NAtmM1xz0MC2pLV+Fq9V0Q==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"G3xaNooNa6jr+qfcDVQIYA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"cQulH84VjuMTR1JhHnjmaw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"cQulH84VjuMTR1JhHnjmaw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"WKhBsDQzwhbzo6QNTsM30g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"WKhBsDQzwhbzo6QNTsM30g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"WKhBsDQzwhbzo6QNTsM30g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"kYj6GuuURUI0n8ddU0Z2\/w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"WKhBsDQzwhbzo6QNTsM30g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"kYj6GuuURUI0n8ddU0Z2\/w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"kYj6GuuURUI0n8ddU0Z2\/w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"2Z7W4t2sdI5ZQurm0sMKkg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"YkKqM1MbQgF5eMxvOoDpiQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"KW5DZQKFD5aYGl+p+YlssQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"KW5DZQKFD5aYGl+p+YlssQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"KW5DZQKFD5aYGl+p+YlssQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"kYj6GuuURUI0n8ddU0Z2\/w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"KW5DZQKFD5aYGl+p+YlssQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"kYj6GuuURUI0n8ddU0Z2\/w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"NM4YTjW+HKGI1atBi7Idug==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"6g2Yqo1F3dOZ2yQlnc9awA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"6g2Yqo1F3dOZ2yQlnc9awA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"NM4YTjW+HKGI1atBi7Idug==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"NM4YTjW+HKGI1atBi7Idug==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"EFaIg+chKOoKNE2rsFWotA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"NM4YTjW+HKGI1atBi7Idug==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"NM4YTjW+HKGI1atBi7Idug==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"NM4YTjW+HKGI1atBi7Idug==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"NM4YTjW+HKGI1atBi7Idug==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"yu+c3CJMFfE\/tWe4HK0O7w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"lvSkH3rB08hB7UMFWkXTeA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"lvSkH3rB08hB7UMFWkXTeA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"yu+c3CJMFfE\/tWe4HK0O7w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"1jrOvM7I6F\/fI4S4ilUycw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"1jrOvM7I6F\/fI4S4ilUycw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"1jrOvM7I6F\/fI4S4ilUycw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"lvSkH3rB08hB7UMFWkXTeA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"lvSkH3rB08hB7UMFWkXTeA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"AC9\/jGr3ELz\/\/vHf092xGw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"AC9\/jGr3ELz\/\/vHf092xGw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"AC9\/jGr3ELz\/\/vHf092xGw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"mfT3e14dOUXoEE1R2JKCIA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"lvSkH3rB08hB7UMFWkXTeA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"mfT3e14dOUXoEE1R2JKCIA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"mfT3e14dOUXoEE1R2JKCIA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"mfT3e14dOUXoEE1R2JKCIA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"lvSkH3rB08hB7UMFWkXTeA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vjipL6dV73H0n+bu8Tx66w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vjipL6dV73H0n+bu8Tx66w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vjipL6dV73H0n+bu8Tx66w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"vjipL6dV73H0n+bu8Tx66w==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"Ux6rtuZ7UqF7AoCeCCUMPw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"Ux6rtuZ7UqF7AoCeCCUMPw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"mfT3e14dOUXoEE1R2JKCIA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"Ux6rtuZ7UqF7AoCeCCUMPw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"VZY4eWNZZRnT0EIl5g4dRw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"VZY4eWNZZRnT0EIl5g4dRw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"VZY4eWNZZRnT0EIl5g4dRw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"VZY4eWNZZRnT0EIl5g4dRw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"VZY4eWNZZRnT0EIl5g4dRw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"VZY4eWNZZRnT0EIl5g4dRw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"ar4nzdFbzo8hPCNSFqMC+Q==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"ar4nzdFbzo8hPCNSFqMC+Q==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"o9MEpQJL0r1J3l5dCVf8Tg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"o9MEpQJL0r1J3l5dCVf8Tg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"VZY4eWNZZRnT0EIl5g4dRw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"m8auUsNufWI3PpDWt6bLlg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"m8auUsNufWI3PpDWt6bLlg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"m8auUsNufWI3PpDWt6bLlg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"m8auUsNufWI3PpDWt6bLlg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"m8auUsNufWI3PpDWt6bLlg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"wBSkr8ewKucm4\/K0ckkg9A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"wBSkr8ewKucm4\/K0ckkg9A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"JK+qC\/AEwffnSMvh2NyeCA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"wBSkr8ewKucm4\/K0ckkg9A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"wBSkr8ewKucm4\/K0ckkg9A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"JMner8wPalO7ptD5ANiubQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"JMner8wPalO7ptD5ANiubQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"JMner8wPalO7ptD5ANiubQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"m9Lix3+mezodhVKGPrhrQg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"m9Lix3+mezodhVKGPrhrQg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"m9Lix3+mezodhVKGPrhrQg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"7g3cu5niypEas5cdyuBikg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"7g3cu5niypEas5cdyuBikg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"7g3cu5niypEas5cdyuBikg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"7g3cu5niypEas5cdyuBikg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"JK+qC\/AEwffnSMvh2NyeCA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"zMfVO10cme9lnk8SHaccwQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"zMfVO10cme9lnk8SHaccwQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"zMfVO10cme9lnk8SHaccwQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"zMfVO10cme9lnk8SHaccwQ==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"uHIaKnKfn7LT5dicWMTFRA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"pu6Q6+nYjqhHNGBU3QDB3g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"uHIaKnKfn7LT5dicWMTFRA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"uHIaKnKfn7LT5dicWMTFRA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"uHIaKnKfn7LT5dicWMTFRA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"uHIaKnKfn7LT5dicWMTFRA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"uHIaKnKfn7LT5dicWMTFRA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"t67AM1TJU4Ui0DP7wRXy+Q==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"t67AM1TJU4Ui0DP7wRXy+Q==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"t67AM1TJU4Ui0DP7wRXy+Q==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"Icdk1iMNc4461ygThyZ3VA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"xEcwF7Q\/jUsEl1wxZKq5Gg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"xEcwF7Q\/jUsEl1wxZKq5Gg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"FAit8kUvFJQXknCkRoJDxg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"FAit8kUvFJQXknCkRoJDxg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"FAit8kUvFJQXknCkRoJDxg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"Icdk1iMNc4461ygThyZ3VA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"FAit8kUvFJQXknCkRoJDxg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"TM+TsH5tIyWcJsM2KVeUsg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"TM+TsH5tIyWcJsM2KVeUsg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"HAiNsI8NDbv+jcqoiif8MA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"HAiNsI8NDbv+jcqoiif8MA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"91CURJdtyffO7ek7XS88tg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"91CURJdtyffO7ek7XS88tg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"5GF8oW+gjSxP8Tuk7xq9GA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"FAit8kUvFJQXknCkRoJDxg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"FAit8kUvFJQXknCkRoJDxg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"7BUPWhYceXcGx\/h7zwDELA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"7BUPWhYceXcGx\/h7zwDELA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"7BUPWhYceXcGx\/h7zwDELA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"7BUPWhYceXcGx\/h7zwDELA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"BoffLZC7wGkn+vTFHhx\/4g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"5GF8oW+gjSxP8Tuk7xq9GA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"BoffLZC7wGkn+vTFHhx\/4g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"jw5gSMCgM9QiZ5e1IOjf5A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"jw5gSMCgM9QiZ5e1IOjf5A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"jw5gSMCgM9QiZ5e1IOjf5A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"BoffLZC7wGkn+vTFHhx\/4g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"wwNQiS9TJRVWIpM73wEV\/A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"wwNQiS9TJRVWIpM73wEV\/A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"wwNQiS9TJRVWIpM73wEV\/A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"wwNQiS9TJRVWIpM73wEV\/A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"LF7QLXNIXErox+vXqzksmw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"Bk7vTRieLkgQtO3Pza5aPw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-8 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"Bk7vTRieLkgQtO3Pza5aPw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"Bk7vTRieLkgQtO3Pza5aPw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"Bk7vTRieLkgQtO3Pza5aPw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"PlKOoc8pyERuXMyX65j78A==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"3FDM6jQ9xBHmfx49jLk7og==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-3 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"LF7QLXNIXErox+vXqzksmw==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-9 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"YG3NuqppRx+CAD2iTJzphg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-4 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"YG3NuqppRx+CAD2iTJzphg==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-6 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"2eKXar5gdu88MTl\/jRNC\/g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"3FDM6jQ9xBHmfx49jLk7og==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - execute post...
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-1 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"3FDM6jQ9xBHmfx49jLk7og==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-5 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"2eKXar5gdu88MTl\/jRNC\/g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-7 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"2eKXar5gdu88MTl\/jRNC\/g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - execute post...
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - 
+INFO http-nio-8080-exec-2 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"2eKXar5gdu88MTl\/jRNC\/g==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - create httppost:https://api.weixin.qq.com/sns/jscode2session
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - set utf-8 form entity to httppost
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - execute post...
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - get response from http server..
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - response status: HTTP/1.1 200 OK
 INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - 
-INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"3FDM6jQ9xBHmfx49jLk7og==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}
+INFO http-nio-8080-exec-10 com.springbook.rice.common.utils.HttpXmlClient - {"session_key":"9Q+FSLBxNsyyvx9lUXjbQA==","openid":"oYj2g4sE13SOPl4XPlDqctH2ki4M"}

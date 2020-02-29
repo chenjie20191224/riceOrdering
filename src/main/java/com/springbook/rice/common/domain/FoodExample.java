@@ -445,66 +445,6 @@ public class FoodExample {
             return (Criteria) this;
         }
 
-        public Criteria andDeliveryFeeIsNull() {
-            addCriterion("delivery_fee is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeIsNotNull() {
-            addCriterion("delivery_fee is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeEqualTo(BigDecimal value) {
-            addCriterion("delivery_fee =", value, "deliveryFee");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeNotEqualTo(BigDecimal value) {
-            addCriterion("delivery_fee <>", value, "deliveryFee");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeGreaterThan(BigDecimal value) {
-            addCriterion("delivery_fee >", value, "deliveryFee");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("delivery_fee >=", value, "deliveryFee");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeLessThan(BigDecimal value) {
-            addCriterion("delivery_fee <", value, "deliveryFee");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("delivery_fee <=", value, "deliveryFee");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeIn(List<BigDecimal> values) {
-            addCriterion("delivery_fee in", values, "deliveryFee");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeNotIn(List<BigDecimal> values) {
-            addCriterion("delivery_fee not in", values, "deliveryFee");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("delivery_fee between", value1, value2, "deliveryFee");
-            return (Criteria) this;
-        }
-
-        public Criteria andDeliveryFeeNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("delivery_fee not between", value1, value2, "deliveryFee");
-            return (Criteria) this;
-        }
-
         public Criteria andPackFeeIsNull() {
             addCriterion("pack_fee is null");
             return (Criteria) this;
