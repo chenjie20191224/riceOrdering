@@ -31,7 +31,7 @@
                 <div class="layui-form-item">
                     <label  class="layui-form-label">缩略图
                     </label>
-                    <img id="LAY_demo_upload" width="400" src="./banner/images/banner.png">
+                    <img id="LAY_demo_upload" width="400" th:src="${src}">
                 </div>
 
                 <div class="layui-form-item">
@@ -69,9 +69,9 @@
                 console.log(data);
                 //发异步，把数据提交给php
                   //发异步，把数据提交给php
-                  $.post("/submitIcon",function () {
+                  $.post("/submitIcon",function (data) {
+                      console.log(data)
                       // 获得frame索引
-                      layer.msg('已删除!',{icon:1,time:1000});
                       var index = parent.layer.getFrameIndex(window.name);
                       //关闭当前frame
                       parent.layer.close(index);

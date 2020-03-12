@@ -21,7 +21,6 @@
 <!--        <thymeleaf-layout-dialect.version>2.1.1</thymeleaf-layout-dialect.version>-->
     </properties>
 
-
     <dependencies>
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>

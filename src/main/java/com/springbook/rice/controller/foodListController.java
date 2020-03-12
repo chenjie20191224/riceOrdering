@@ -78,13 +78,15 @@ public class foodListController {
     @RequestMapping("/foodUpdate")
     @ResponseBody
     public void foodUpdate(Food food){
+        System.out.println("开始更新菜品：ID="+food.getId()+food.getFoodName());
         foodService.foodUpdate(food);
      }
 
 
 //    菜品icon上传页面 foodIcon-add
     @RequestMapping("/foodIcon-add")
-public String businessEdit() {
+    public String businessEdit(String src,Model model) {
+    model.addAttribute("src",src);
     return "foodIcon-add";
 }
 
@@ -99,8 +101,8 @@ public String businessEdit() {
 //    确认选择图片
    @PostMapping("/submitIcon")
    @ResponseBody
-   public void submitIcon() {
-    foodService.iconConfirm();
+   public Boolean submitIcon() {
+    return foodService.iconConfirm();
   }
 
 
@@ -108,15 +110,18 @@ public String businessEdit() {
     @PostMapping("/foodVerify")
     @ResponseBody
     public JSONResult foodVerify(String foodName) {
+
         return foodService.foodVerify(foodName);
 }
 //菜品更新时验证更新的菜品名是否存在
       @PostMapping("/foodNameVerify")
       @ResponseBody
       public JSONResult foodNameVerify(String foodName,String category) {
+          String[] split = foodName.split(",");
 
-          System.out.println(category);
-        return foodService.foodNameVerify(foodName,category);
+          String s = split.length!=0?split[0]:null;
+          System.out.println("开始验证菜品名："+s);
+        return foodService.foodNameVerify(s,category);
      }
 //菜品删除
     @PostMapping("/foodDelet")

@@ -51,7 +51,7 @@ public class FileUtils {
     public static JSONPhotos uploadPhotos(MultipartFile file){
         JSONPhotos jsonPhotos=new JSONPhotos();
         // 要上传的目标文件存放路径
-        String localPath = "E:/Photos";
+        String localPath = "F:/IDEA/Photos";
         // 上传成功或者失败的提示
         if (FileUtils.upload(file, localPath, file.getOriginalFilename())){
             // 上传成功，给出页面提示

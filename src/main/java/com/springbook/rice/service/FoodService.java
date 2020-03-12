@@ -17,7 +17,7 @@ public interface FoodService {
     int foodDelet(String[] strings);
     Food selectByfoodName(String foodName);
     JSONResult foodNameVerify(String foodName,String category);
-    void iconConfirm();
+    Boolean iconConfirm();
     List<Food> selectByCategory(String category);
 
 }

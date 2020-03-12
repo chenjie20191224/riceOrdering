@@ -3,6 +3,8 @@ package com.springbook.rice.common.domain;
 import java.math.BigDecimal;
 
 public class Food {
+    private Integer id;
+
     private String foodName;
 
     private String category;
@@ -14,6 +16,14 @@ public class Food {
     private String icon;
 
     private BigDecimal packFee;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getFoodName() {
         return foodName;
