@@ -158,6 +158,9 @@ public class FoodServiceImpl implements FoodService {
     public List<Food> selectByCategory(String category){
         System.out.println("菜品类别下拉框选择");
         System.out.println("1.设置category_food的选择状态");
+        if (category.equals("所有类别")){
+            return selectAll();
+        }
         List<CategoryFood> categoryFoods =categoryFoodService.selectAll();
         for (int i=0;i<categoryFoods.size();i++){
             if (categoryFoods.get(i).getCategory().equals(category)){

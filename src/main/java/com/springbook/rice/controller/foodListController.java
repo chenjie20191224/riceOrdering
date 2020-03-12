@@ -2,6 +2,7 @@ package com.springbook.rice.controller;
 
 import com.springbook.rice.common.domain.CategoryFood;
 import com.springbook.rice.common.domain.Food;
+import com.springbook.rice.common.domain.FoodExample;
 import com.springbook.rice.common.utils.JSONPhotos;
 import com.springbook.rice.common.utils.JSONResult;
 import com.springbook.rice.mapper.BusinessMapper;
@@ -24,30 +25,34 @@ import java.util.List;
 public class foodListController {
     @Autowired
     FoodService foodService;
-  @Autowired
+    @Autowired
     CategoryFoodService categoryFoodService;
-  @Autowired
+    @Autowired
     BusinessMapper businessMapper;
+    @Autowired
+    FoodMapper foodMapper;
 
 
 //跳转菜品列表并显示
     @RequestMapping("/food-list")
-    public String foodList(Model model,String category){
+    public String foodList(Model model,String category,String foodName){
         //    菜品类别下拉框选择
+        List<Food> foods=foodService.selectAll();
         if (category!=null){
-            List<Food> foods = foodService.selectByCategory(category);
-            model.addAttribute("Foods",foods);
-            List<CategoryFood> categoryFoods = categoryFoodService.selectAll();
-            model.addAttribute("categoryFoods",categoryFoods);
+             foods = foodService.selectByCategory(category);
         }
-        if (category==null||category.equals("菜品类别")){
+        if (category==null||category.equals("所有类别")){
             foodService.selectByCategory("初始化菜品类别下拉框的选择状态");
-            List<Food> foods = foodService.selectAll();
-            model.addAttribute("Foods",foods);
-            List<CategoryFood> categoryFoods = categoryFoodService.selectAll();
-            model.addAttribute("categoryFoods",categoryFoods);
+//             foods = foodService.selectAll();
         }
-
+        if (foodName!=null&&!foodName.equals("")){
+            FoodExample foodExample=new FoodExample();
+            foodExample.createCriteria().andFoodNameEqualTo(foodName);
+            foods=foodMapper.selectByExample(foodExample);
+        }
+        model.addAttribute("Foods",foods);
+        List<CategoryFood> categoryFoods = categoryFoodService.selectAll();
+        model.addAttribute("categoryFoods",categoryFoods);
         return "food-list";
     }
 

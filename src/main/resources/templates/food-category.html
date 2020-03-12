@@ -38,7 +38,7 @@
                         <div class="layui-card-body ">
                             <form class="layui-form layui-col-space5">
                                 <div class="layui-input-inline layui-show-xs-block">
-                                    <input class="layui-input" placeholder="分类名" name="cate_name"></div>
+                                    <input class="layui-input" lay-verify="nikename" placeholder="分类名" name="cate_name"></div>
                                 <div class="layui-input-inline layui-show-xs-block">
                                     <button class="layui-btn layui-btn layui-btn-xs"  lay-submit  lay-filter="categoryAdd"><i class="layui-icon"></i>增加</button>
                                 </div>
@@ -75,6 +75,17 @@
         <script>
             layui.use(['form'], function(){
                 var form = layui.form;
+
+                //自定义验证规则
+                form.verify({
+                    nikename: function(value) {
+                        if (value.length == 0) {
+                            return '请输入类别名！';
+                        }
+                    }
+                });
+
+
                 form.on('submit()', function(data){
                     $.post("/categoryAdd?category="+data.field.cate_name,data.field,function (data) {
                         if (!data.success){

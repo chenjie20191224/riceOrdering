@@ -43,12 +43,12 @@
 
                                 <div class="layui-input-inline layui-show-xs-block">
                                     <select name="contrller" id="selector">
-                                        <option value="菜品类别">菜品类别</option>
+                                        <option value="所有类别">所有类别</option>
                                         <option th:each="categoryFood:${categoryFoods}" th:text="${categoryFood.getCategory()}" th:value="${categoryFood.getCategory()}" th:selected="${categoryFood.getSelected()}">支付宝</option>
                                         </select>
                                 </div>
                                 <div class="layui-inline layui-show-xs-block">
-                                    <input type="text" name="username"  placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                                    <input type="text" name="foodName"  placeholder="请输入菜品名" autocomplete="off" class="layui-input">
                                 </div>
                                 <div class="layui-inline layui-show-xs-block">
                                     <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
@@ -120,7 +120,12 @@
             var  form = layui.form;
             form.on('select()', function(data){
                 window.location.href="/food-list?category="+data.value;
+
             });
+
+            //监听提交
+            form.on('submit(sreach)', function(data) {
+                });
 
             // 监听全选
             form.on('checkbox(checkall)', function(data){
