@@ -59,6 +59,8 @@ public class foodListController {
 
     @RequestMapping("/food-edit")
     public String foodEdit(String foodName,Model model){
+        //  更新菜品封面前先清空之前的保存的封面
+        foodService.initFoodicon();
         Food food = foodService.selectByfoodName(foodName);
         model.addAttribute("food",food);
         List<CategoryFood> categoryFoods = categoryFoodService.selectAll();
@@ -91,6 +93,7 @@ public class foodListController {
 //    菜品icon上传页面 foodIcon-add
     @RequestMapping("/foodIcon-add")
     public String businessEdit(String src,Model model) {
+
     model.addAttribute("src",src);
     return "foodIcon-add";
 }
@@ -119,15 +122,15 @@ public class foodListController {
         return foodService.foodVerify(foodName);
 }
 //菜品更新时验证更新的菜品名是否存在
-      @PostMapping("/foodNameVerify")
-      @ResponseBody
-      public JSONResult foodNameVerify(String foodName,String category) {
-          String[] split = foodName.split(",");
+    @PostMapping("/foodNameVerify")
+    @ResponseBody
+    public JSONResult foodNameVerify(String foodName,String category) {
+      String[] split = foodName.split(",");
 
-          String s = split.length!=0?split[0]:null;
-          System.out.println("开始验证菜品名："+s);
-        return foodService.foodNameVerify(s,category);
-     }
+      String s = split.length!=0?split[0]:null;
+      System.out.println("开始验证菜品名："+s);
+    return foodService.foodNameVerify(s,category);
+    }
 //菜品删除
     @PostMapping("/foodDelet")
     @ResponseBody
@@ -135,4 +138,6 @@ public class foodListController {
         System.out.println(foodNames);
         foodService.foodDelet(foodNames);
     }
+
+
 }

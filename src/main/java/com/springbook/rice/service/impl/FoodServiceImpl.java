@@ -71,10 +71,10 @@ public class FoodServiceImpl implements FoodService {
         System.out.println("更新菜品");
 
 //        没有更新图片用原有的
-        if (foodIconUrl!=null){
+        if (this.iconConfirm!=null){
 //            更新了图片
-            food.setIcon(this.foodIconUrl);
-            this.foodIconUrl=null;
+            food.setIcon(this.iconConfirm);
+            this.iconConfirm=null;
         }
         if (food.getFoodName().equals("")){
             food.setFoodName(null);
@@ -177,6 +177,10 @@ public class FoodServiceImpl implements FoodService {
         foodExample.createCriteria().andCategoryEqualTo(category);
        return foodMapper.selectByExample(foodExample);
 
+    }
+
+    public void initFoodicon(){
+        this.iconConfirm=null;
     }
 
 

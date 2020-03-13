@@ -19,5 +19,6 @@ public interface FoodService {
     JSONResult foodNameVerify(String foodName,String category);
     Boolean iconConfirm();
     List<Food> selectByCategory(String category);
+    void initFoodicon();
 
 }
