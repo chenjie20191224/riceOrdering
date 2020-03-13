@@ -69,7 +69,8 @@ public class BusinessController {
 
     //轮盘图更新
     @RequestMapping("/bannerEdit")
-    public String bannerEdit(String banners) {
+    public String bannerEdit(String banners,String src,Model model) {
+        model.addAttribute("src",src);
         this.msg=banners;
         return "banner-edit";
 

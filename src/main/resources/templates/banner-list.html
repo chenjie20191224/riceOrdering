@@ -48,7 +48,7 @@
                             http://www.xuebingsi.com
                         </td>
                         <td class="td-status">
-                            <span class="layui-btn layui-btn-normal layui-btn-mini" title="编辑" href="javascript:;" onclick="banner_edit('编辑','/bannerEdit?banners=chart1','4','','450')"
+                            <span class="layui-btn layui-btn-normal layui-btn-mini" title="编辑" href="javascript:;" th:onclick="banner_edit('编辑','/bannerEdit?banners=chart1&src='+[[${business.getChart1()}]],'4','','450')"
                                    style="text-decoration:none">
                                 编辑
                             </span>
@@ -65,7 +65,7 @@
                             http://www.xuebingsi.com
                         </td>
                         <td class="td-status">
-                            <span class="layui-btn layui-btn-normal layui-btn-mini" title="编辑" href="javascript:;" onclick="banner_edit('编辑','/bannerEdit?banners=chart2','4','','450')"
+                            <span class="layui-btn layui-btn-normal layui-btn-mini" title="编辑" href="javascript:;" th:onclick="banner_edit('编辑','/bannerEdit?banners=chart2&src='+[[${business.getChart2()}]],'4','','450')"
                                   style="text-decoration:none">
                                 编辑
                             </span>
@@ -82,7 +82,7 @@
                             http://www.xuebingsi.com
                         </td>
                         <td class="td-status">
-                            <span class="layui-btn layui-btn-normal layui-btn-mini" title="编辑" href="javascript:;" onclick="banner_edit('编辑','/bannerEdit?banners=chart3','4','','450')"
+                            <span class="layui-btn layui-btn-normal layui-btn-mini" title="编辑" href="javascript:;" th:onclick="banner_edit('编辑','/bannerEdit?banners=chart3&src='+[[${business.getChart3()}]],'4','','450')"
                                   style="text-decoration:none">
                                 编辑
                             </span>
