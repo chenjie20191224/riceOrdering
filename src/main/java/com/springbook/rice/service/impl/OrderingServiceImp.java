@@ -2,6 +2,7 @@ package com.springbook.rice.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.springbook.rice.common.domain.Food;
 import com.springbook.rice.common.domain.OrderFood;
 import com.springbook.rice.common.domain.OrderFoodExample;
 import com.springbook.rice.mapper.OrderFoodMapper;
@@ -28,10 +29,13 @@ public class OrderingServiceImp implements OrderingService {
     }
 //    搜索订单
    public List<OrderFood> sreach(String start,String end,String orderId,String status){
+
+        if (status.equals("所有订单")){
+            status=null;
+        }
        OrderFoodExample orderFoodExample=new OrderFoodExample();
        if (!orderId.equals("")){
            orderFoodExample.createCriteria().andOrderIdEqualTo(orderId);
-
        }
        if (!start.equals("")&&!end.equals("")){
            System.out.println("start:"+start+"  end:"+end);
@@ -40,7 +44,12 @@ public class OrderingServiceImp implements OrderingService {
            String[] split2 = end.split("-");
            end=split2[0]+"年"+split2[1]+"月"+split2[2]+"日 23:59";
            System.out.println(start+end);
-           orderFoodExample.createCriteria().andOrderTimeBetween(start,end).andOrderStateEqualTo(status);
+           if (status!=null){
+               orderFoodExample.createCriteria().andOrderTimeBetween(start,end).andOrderStateEqualTo(status);
+           }else {
+               orderFoodExample.createCriteria().andOrderTimeBetween(start,end);
+           }
+
 
        }
        if (!start.equals("")&&end.equals("")){
@@ -48,7 +57,11 @@ public class OrderingServiceImp implements OrderingService {
            String[] split = start.split("-");
            start=split[0]+"年"+split[1]+"月"+split[2]+"日";
            System.out.println(start+start+" 23:59");
-           orderFoodExample.createCriteria().andOrderTimeBetween(start,start+" 23:59").andOrderStateEqualTo(status);
+           if (status!=null){
+               orderFoodExample.createCriteria().andOrderTimeBetween(start,end).andOrderStateEqualTo(status);
+           }else {
+               orderFoodExample.createCriteria().andOrderTimeBetween(start,end);
+           }
 
        }
        if (start.equals("")&&!end.equals("")){
@@ -59,13 +72,23 @@ public class OrderingServiceImp implements OrderingService {
            }
            end=split[0]+"年"+split[1]+"月"+split[2]+"日";
            System.out.println(end+end+" 23:59");
-           orderFoodExample.createCriteria().andOrderTimeBetween(end,end+" 23:59").andOrderStateEqualTo(status);
-
+           if (status!=null){
+               orderFoodExample.createCriteria().andOrderTimeBetween(start,end).andOrderStateEqualTo(status);
+           }else {
+               orderFoodExample.createCriteria().andOrderTimeBetween(start,end);
+           }
        }
        orderFoodExample.setOrderByClause("order_id DESC");
        List<OrderFood> orderFoods = orderFoodMapper.selectByExample(orderFoodExample);
        this.sreachResult=orderFoods;
-       return orderFoods;
+       for (OrderFood orderFood : orderFoods) {
+           System.out.println(orderFood.getOrderId());
+       }
+       PageHelper.startPage(pageNum , pageSize);
+       List<OrderFood> orderFoods2 = orderFoodMapper.selectByExample(orderFoodExample);
+       PageInfo<OrderFood> personPageInfo = new PageInfo<>(orderFoods2);
+       List<OrderFood> pageList = personPageInfo.getList();
+       return pageList;
 }
     public Boolean completeOrder(String orderId){
         OrderFood orderFood=new OrderFood();
@@ -80,16 +103,21 @@ public class OrderingServiceImp implements OrderingService {
         return orderFoods;
     }
     public List<OrderFood> selectOrderByStatus(String status){
-
+        if (this.sreachResult!=null){
+            List<OrderFood> list=this.sreachResult;
+            this.sreachResult=null;
+            return list;
+        }
         OrderFoodExample orderFoodExample=new OrderFoodExample();
-        orderFoodExample.createCriteria().andOrderStateEqualTo(status);
+        if(!status.equals("所有订单")){
+            orderFoodExample.createCriteria().andOrderStateEqualTo(status);
+        }
         orderFoodExample.setOrderByClause("order_id DESC");
         List<OrderFood> orderFoods = orderFoodMapper.selectByExample(orderFoodExample);
         return  orderFoods;
     }
 
     public List<OrderFood> selectOrder(String status){
-
         PageHelper.startPage(pageNum , pageSize);
         List<OrderFood> orderFoods = selectOrderByStatus(status);
         PageInfo<OrderFood> personPageInfo = new PageInfo<>(orderFoods);

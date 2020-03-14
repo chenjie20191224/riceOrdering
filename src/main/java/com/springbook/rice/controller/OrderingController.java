@@ -18,20 +18,50 @@ import java.util.List;
 
 @Controller
 public class OrderingController {
-    String status;
+    String status="待配送";
     @Autowired
     OrderingService orderingService;
     @Autowired
     OrderFoodMapper orderFoodMapper;
     @Autowired
     OrderDetailMapper orderDetailMapper;
+
+    @RequestMapping("/order-list2")
+    public String orderList2(Model model,String status,String orderId,String start,String end){
+        List<OrderFood> orderFoods = orderingService.selectOrder("待配送");
+        model.addAttribute("status","待配送");
+        System.out.println("status:"+status);
+        if (status!=null){
+            System.out.println(status+this.status);
+            if (!status.equals(this.status)){
+                System.out.println("分页重置");
+                orderingService.setPage(1,10);
+            }
+            this.status=status;
+            orderFoods = orderingService.selectOrder(status);
+
+        }
+        System.out.println(orderId);
+        if (orderId!=null&&!(orderId.equals("")&&start.equals("")&&end.equals(""))){
+//            进行筛选
+            orderFoods = orderingService.sreach(start, end, orderId,this.status);
+//            model.addAttribute("sreach","true");
+            model.addAttribute("start",start);
+            model.addAttribute("end",end);
+            model.addAttribute("orderId",orderId);
+
+        }
+        model.addAttribute("status",this.status);
+        model.addAttribute("orderFoods",orderFoods);
+
+        return "order-list2";
+    }
     @RequestMapping("/order-list")
     public String orderList(Model model,String status,String orderId,String start,String end){
+
         if (status==null) {
             status=this.status;
         }
-
-
         if (orderId!=null&&!(orderId.equals("")&&start.equals("")&&end.equals(""))){
 //            进行筛选
             List<OrderFood> sreach = orderingService.sreach(start, end, orderId,this.status);
