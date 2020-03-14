@@ -5,6 +5,7 @@ import com.springbook.rice.common.domain.OrderDetailExample;
 import com.springbook.rice.common.domain.OrderFood;
 import com.springbook.rice.common.domain.OrderFoodExample;
 import com.springbook.rice.common.utils.JSONOrderNum;
+import com.springbook.rice.common.utils.Session;
 import com.springbook.rice.mapper.OrderDetailMapper;
 import com.springbook.rice.mapper.OrderFoodMapper;
 import com.springbook.rice.service.OrderingService;
@@ -41,7 +42,7 @@ public class OrderingController {
             orderFoods = orderingService.selectOrder(status);
 
         }
-        System.out.println(orderId);
+
         if (orderId!=null&&!(orderId.equals("")&&start.equals("")&&end.equals(""))){
 //            进行筛选
             orderFoods = orderingService.sreach(start, end, orderId,this.status);
@@ -51,10 +52,18 @@ public class OrderingController {
             model.addAttribute("orderId",orderId);
 
         }
+        Session.getSession().setAttribute("status",this.status);
+        System.out.println(Session.getSession().getAttribute("status").toString());
         model.addAttribute("status",this.status);
         model.addAttribute("orderFoods",orderFoods);
 
         return "order-list2";
+    }
+    @RequestMapping("/getCurrStatus")
+    @ResponseBody
+    public String getCurrStatus(){
+        Object status = Session.getSession().getAttribute("status");
+        return status.toString();
     }
     @RequestMapping("/order-list")
     public String orderList(Model model,String status,String orderId,String start,String end){
