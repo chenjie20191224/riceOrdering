@@ -47,13 +47,14 @@ public class OrderingController {
 //            进行筛选
             orderFoods = orderingService.sreach(start, end, orderId,this.status);
 //            model.addAttribute("sreach","true");
+            orderingService.setPage(1,10);
             model.addAttribute("start",start);
             model.addAttribute("end",end);
             model.addAttribute("orderId",orderId);
 
         }
         Session.getSession().setAttribute("status",this.status);
-        System.out.println(Session.getSession().getAttribute("status").toString());
+
         model.addAttribute("status",this.status);
         model.addAttribute("orderFoods",orderFoods);
 

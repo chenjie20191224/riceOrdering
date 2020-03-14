@@ -16,6 +16,8 @@ import java.util.List;
 public class OrderingServiceImp implements OrderingService {
     Integer pageNum=1;
     Integer pageSize=10;
+    String startCurr=null;
+    String endCurr=null;
     List<OrderFood> sreachResult=null;
     @Autowired
     OrderFoodMapper orderFoodMapper;
@@ -58,7 +60,7 @@ public class OrderingServiceImp implements OrderingService {
            start=split[0]+"年"+split[1]+"月"+split[2]+"日";
            System.out.println(start+start+" 23:59");
            if (status!=null){
-               orderFoodExample.createCriteria().andOrderTimeBetween(start,end).andOrderStateEqualTo(status);
+               orderFoodExample.createCriteria().andOrderTimeBetween(start,start+" 23:59").andOrderStateEqualTo(status);
            }else {
                orderFoodExample.createCriteria().andOrderTimeBetween(start,end);
            }
@@ -73,7 +75,7 @@ public class OrderingServiceImp implements OrderingService {
            end=split[0]+"年"+split[1]+"月"+split[2]+"日";
            System.out.println(end+end+" 23:59");
            if (status!=null){
-               orderFoodExample.createCriteria().andOrderTimeBetween(start,end).andOrderStateEqualTo(status);
+               orderFoodExample.createCriteria().andOrderTimeBetween(end,end+" 23:59").andOrderStateEqualTo(status);
            }else {
                orderFoodExample.createCriteria().andOrderTimeBetween(start,end);
            }
@@ -81,10 +83,20 @@ public class OrderingServiceImp implements OrderingService {
        orderFoodExample.setOrderByClause("order_id DESC");
        List<OrderFood> orderFoods = orderFoodMapper.selectByExample(orderFoodExample);
        this.sreachResult=orderFoods;
-       for (OrderFood orderFood : orderFoods) {
-           System.out.println(orderFood.getOrderId());
+       if (this.endCurr==null){
+           this.startCurr=start;
+           this.endCurr=end;
        }
-       PageHelper.startPage(pageNum , pageSize);
+       System.out.println("Curr"+start+end+"new"+this.startCurr+this.endCurr);
+       if (this.endCurr.equals(end)&&this.startCurr.equals(start)){
+           PageHelper.startPage(pageNum , pageSize);
+       }else {
+           PageHelper.startPage(1 , 10);
+           System.out.println("分页重置");
+           this.startCurr=start;
+           this.endCurr=end;
+       }
+
        List<OrderFood> orderFoods2 = orderFoodMapper.selectByExample(orderFoodExample);
        PageInfo<OrderFood> personPageInfo = new PageInfo<>(orderFoods2);
        List<OrderFood> pageList = personPageInfo.getList();
