@@ -88,15 +88,13 @@ public class OrderingServiceImp implements OrderingService {
            this.endCurr=end;
        }
        System.out.println("Curr"+start+end+"new"+this.startCurr+this.endCurr);
-       if (this.endCurr.equals(end)&&this.startCurr.equals(start)){
-           PageHelper.startPage(pageNum , pageSize);
-       }else {
-           PageHelper.startPage(1 , 10);
+       if (!this.endCurr.equals(end)||!this.startCurr.equals(start)){
+           setPage(1,10);
            System.out.println("分页重置");
            this.startCurr=start;
            this.endCurr=end;
        }
-
+       PageHelper.startPage(pageNum , pageSize);
        List<OrderFood> orderFoods2 = orderFoodMapper.selectByExample(orderFoodExample);
        PageInfo<OrderFood> personPageInfo = new PageInfo<>(orderFoods2);
        List<OrderFood> pageList = personPageInfo.getList();
