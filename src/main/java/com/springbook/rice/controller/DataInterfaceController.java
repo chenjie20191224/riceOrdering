@@ -21,6 +21,8 @@ import java.util.Map;
 
 @Controller
 public class DataInterfaceController {
+    Boolean newOder=false;
+    Boolean load=false;
     @Autowired
     FoodService foodService;
     @Autowired
@@ -33,6 +35,27 @@ public class DataInterfaceController {
     OrderFoodMapper orderFoodMapper;
     @Autowired
     OrderDetailMapper orderDetailMapper;
+
+//    局部刷新订单
+@RequestMapping("/load")
+@ResponseBody
+public Boolean load(){
+    Boolean load;
+    load=this.load;
+    this.load=false;
+    return load;
+}
+
+//    新订单提示
+@RequestMapping("/orderPrompt")
+@ResponseBody
+public Boolean orderPrompt(){
+    Boolean newOder;
+    newOder=this.newOder;
+    this.newOder=false;
+    return newOder;
+}
+
     @RequestMapping("/MenuInterface")
     @ResponseBody
     public JSONMenu MenuInterface(){
@@ -138,18 +161,8 @@ public class DataInterfaceController {
    @RequestMapping("/createOrder")
    @ResponseBody
    public Boolean createOrder(OrderFood order){
-       System.out.println(order.getActualPay());
-       System.out.println(order.getAddress());
-       System.out.println(order.getDeliveryFee());
-       System.out.println(order.getDeliveryTime());
-       System.out.println(order.getOrderTime());
-       System.out.println(order.getPackFee());
-       System.out.println(order.getRemarks());
-       System.out.println(order.getTablewareQuantity());
-       System.out.println(order.getTelephone());
-       System.out.println(order.getTotalPrice());
-       System.out.println(order.getUserName());
-
+       this.newOder=true;
+       this.load=true;
        int i = orderFoodMapper.insertSelective(order);
        return i!=0?true:false;
 

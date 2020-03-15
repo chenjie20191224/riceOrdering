@@ -1,0 +1,4 @@
+1. 文件名：order-list2.html
+   标题：实现了div的局部刷新
+   方法： $("#autore").load(location.href + " #autore");
+               //#autore为div的id名，
