@@ -24,7 +24,7 @@ public class OrderingServiceImp implements OrderingService {
 //退款
     public Boolean refund(String orderId){
         OrderFood orderFood=new OrderFood();
-        orderFood.setOrderState("已退款");
+        orderFood.setOrderState("已取消");
         orderFood.setOrderId(orderId);
         int i = orderFoodMapper.updateByPrimaryKeySelective(orderFood);
         return i!=0?true:false;
@@ -122,7 +122,11 @@ public class OrderingServiceImp implements OrderingService {
         if(!status.equals("所有订单")){
             orderFoodExample.createCriteria().andOrderStateEqualTo(status);
         }
-        orderFoodExample.setOrderByClause("order_id DESC");
+        if (status.equals("待配送")){
+            orderFoodExample.setOrderByClause("order_id ASC");
+        }else {
+            orderFoodExample.setOrderByClause("order_id DESC");
+        }
         List<OrderFood> orderFoods = orderFoodMapper.selectByExample(orderFoodExample);
         return  orderFoods;
     }

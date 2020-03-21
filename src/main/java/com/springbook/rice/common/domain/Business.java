@@ -35,6 +35,8 @@ public class Business {
 
     private Integer serviceTime;
 
+    private Boolean businessStatus;
+
     public Integer getBusinessId() {
         return businessId;
     }
@@ -161,5 +163,13 @@ public class Business {
 
     public void setServiceTime(Integer serviceTime) {
         this.serviceTime = serviceTime;
+    }
+
+    public Boolean getBusinessStatus() {
+        return businessStatus;
+    }
+
+    public void setBusinessStatus(Boolean businessStatus) {
+        this.businessStatus = businessStatus;
     }
 }

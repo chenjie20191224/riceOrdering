@@ -100,7 +100,7 @@
                                             <i class="layui-icon" style="font-size: 20px;padding-right: 10px">&#xe63c;</i></a>
                                         <a th:if="${order.getOrderState().equals('待配送')}" title="完成订单" th:onclick="completeOrder(this,[[${order.getOrderId()}]])" href="javascript:;">
                                             <i class="iconfont" style="font-size: 20px">&#xe6ad;</i></a>
-                                        <a th:if="${order.getOrderState().equals('待配送')}" title="退款" th:onclick="refund(this,[[${order.getOrderId()}]])" href="javascript:;">
+                                        <a th:if="${order.getOrderState().equals('待配送')}" title="取消订单" th:onclick="refund(this,[[${order.getOrderId()}]])" href="javascript:;">
                                             <i class="iconfont" style="font-size: 20px;padding-left: 10px"> &#xe758;</i></a>
 
                                     </td>
@@ -111,7 +111,7 @@
                         </div>
                         <div class="layui-card-body ">
                             <div class="page">
-                                <div id="demo4" th:if="${sreach==null}"></div>
+                                <div id="demo1" th:if="${sreach==null}"></div>
                             </div>
                         </div>
                         </div>
@@ -120,7 +120,42 @@
         </div>
     </body>
     <script>
+        /*订单完成*/
+        function completeOrder(obj, id) {
+            $.ajax({
+                url:"/completeOrder?orderId="+id,
+                success:function (data) {
+                    console.log(data);
+                    // layer.msg("完成订单",{icon:1,time:1000});
+                    // setTimeout(function () {
+                    //     window.location.reload();
+                    // }, 1000)
+                    layer.confirm("确认完成订单？",function () {
+                        window.location.reload();
 
+                    })
+                }
+            })
+        }
+        //订单退款
+        function refund(obj, id) {
+            layer.confirm("确认取消订单？",function () {
+                $.ajax({
+                    url:"/refund?orderId="+id,
+                    success:function (data) {
+                        if (data){
+                            window.location.reload();
+                            // layer.msg("取消成功！",{icon:1,time:1000});
+                            // setTimeout(function () {
+                            // },1000)
+                        }
+                    }
+                })
+
+            })
+
+
+        }
         // document.getElementById("tbody").innerHTML = "<tr><td>asd</td></tr>";
         layui.use(['laypage', 'layer'], function() {
             var laypage = layui.laypage
@@ -139,7 +174,7 @@
 
                     //不显示首页尾页
                     laypage.render({
-                        elem: 'demo4'
+                        elem: 'demo1'
                         , count: num
                         ,curr: location.hash.replace('#!fenye=', "") //获取起始页
                         ,hash: 'fenye' //自定义hash值

@@ -31,7 +31,6 @@
     </script>
 </head>
 <body class="index">
-<button class="layui-btn" id="create1">生成notice</button>
 <audio  autoplay="autoplay" id="auto" src=""></audio>
 <!-- 顶部开始 -->
 <div class="container">
@@ -184,22 +183,6 @@ var _hmt = _hmt || []; (function() {
         var $ = layui.jquery;
 
         let notice01;
-        $("#create1").click(function () {
-            let options = {
-                closeButton:true,//显示关闭按钮
-                debug:false,//启用debug
-                positionClass:"toast-top-center",//弹出的位置,
-                showDuration:"300",//显示的时间
-                hideDuration:"1000",//消失的时间
-                timeOut:"0",//停留的时间,0则不自动关闭
-                extendedTimeOut:"1000",//控制时间
-                showEasing:"swing",//显示时的动画缓冲方式
-                hideEasing:"linear",//消失时的动画缓冲方式
-                iconClass: 'layui-icon layui-icon-praise', // 自定义图标，有内置，如不需要则传空 支持layui内置图标/自定义iconfont类名,需要完整加上 layui-icon/icon iconfont
-                onclick: null, // 点击关闭回调
-            }
-            notice01 = notice.info("您有新的订单！");
-        });
         setInterval(function () {
             $.ajax({
                 url:"/orderPrompt",

@@ -1164,6 +1164,66 @@ public class BusinessExample {
             addCriterion("service_time not between", value1, value2, "serviceTime");
             return (Criteria) this;
         }
+
+        public Criteria andBusinessStatusIsNull() {
+            addCriterion("business_status is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusIsNotNull() {
+            addCriterion("business_status is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusEqualTo(Byte value) {
+            addCriterion("business_status =", value, "businessStatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusNotEqualTo(Byte value) {
+            addCriterion("business_status <>", value, "businessStatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusGreaterThan(Byte value) {
+            addCriterion("business_status >", value, "businessStatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusGreaterThanOrEqualTo(Byte value) {
+            addCriterion("business_status >=", value, "businessStatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusLessThan(Byte value) {
+            addCriterion("business_status <", value, "businessStatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusLessThanOrEqualTo(Byte value) {
+            addCriterion("business_status <=", value, "businessStatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusIn(List<Byte> values) {
+            addCriterion("business_status in", values, "businessStatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusNotIn(List<Byte> values) {
+            addCriterion("business_status not in", values, "businessStatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusBetween(Byte value1, Byte value2) {
+            addCriterion("business_status between", value1, value2, "businessStatus");
+            return (Criteria) this;
+        }
+
+        public Criteria andBusinessStatusNotBetween(Byte value1, Byte value2) {
+            addCriterion("business_status not between", value1, value2, "businessStatus");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {
