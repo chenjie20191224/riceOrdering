@@ -247,12 +247,15 @@
                         layer.msg("不能为空！",{icon:2,time:1000});
                     });
                 } else {
-                    layui.use( 'layer', function(){
-                        var  layer = layui.layer;
-                        layer.alert("更新成功",function () {
-                            document.getElementById(t).submit();
-                        })
-                    });
+                    layer.confirm("确认更新"+t+"?",function () {
+                        layui.use( 'layer', function(){
+                            var  layer = layui.layer;
+                            layer.alert("更新成功",function () {
+                                document.getElementById(t).submit();
+                            })
+                        });
+                    })
+
 
 
                 }

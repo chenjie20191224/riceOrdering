@@ -1,5 +1,6 @@
 package com.springbook.rice.controller;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.springbook.rice.common.domain.*;
 import com.springbook.rice.common.utils.HttpXmlClient;
 import com.springbook.rice.common.utils.JSONBusiness;
@@ -13,8 +14,10 @@ import com.springbook.rice.service.FoodService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,26 +39,27 @@ public class DataInterfaceController {
     @Autowired
     OrderDetailMapper orderDetailMapper;
 
-//    局部刷新订单
-@RequestMapping("/load")
-@ResponseBody
-public Boolean load(){
-    Boolean load;
-    load=this.load;
-    this.load=false;
-    return load;
-}
+    //    局部刷新订单
+    @RequestMapping("/load")
+    @ResponseBody
+    public Boolean load(){
+        Boolean load;
+        load=this.load;
+        this.load=false;
+        return load;
+    }
 
-//    新订单提示
-@RequestMapping("/orderPrompt")
-@ResponseBody
-public Boolean orderPrompt(){
-    Boolean newOder;
-    newOder=this.newOder;
-    this.newOder=false;
-    return newOder;
-}
+    //    新订单提示
+    @RequestMapping("/orderPrompt")
+    @ResponseBody
+    public Boolean orderPrompt(){
+        Boolean newOder;
+        newOder=this.newOder;
+        this.newOder=false;
+        return newOder;
+    }
 
+//    获取菜单信息
     @RequestMapping("/MenuInterface")
     @ResponseBody
     public JSONMenu MenuInterface(){
@@ -67,6 +71,7 @@ public Boolean orderPrompt(){
         return jsonMenu;
     }
 
+//    获取商家信息
     @RequestMapping("/businessInterface")
     @ResponseBody
     public JSONBusiness businessInterface(){
@@ -158,6 +163,7 @@ public Boolean orderPrompt(){
               return true;
 
    }
+
    @RequestMapping("/createOrder")
    @ResponseBody
    public Boolean createOrder(OrderFood order){
@@ -165,13 +171,22 @@ public Boolean orderPrompt(){
        this.load=true;
        int i = orderFoodMapper.insertSelective(order);
        return i!=0?true:false;
-
    }
+
    @RequestMapping("/createOrderDetail")
    @ResponseBody
    public Integer createOrderDetail(OrderDetail orderDetail){
         return orderDetailMapper.insertSelective(orderDetail);
    }
+
+    @RequestMapping("/Printer")
+    @ResponseBody
+    public void Printer(String orderId){
+
+
+    }
+
+
     @RequestMapping("/orderList")
     @ResponseBody
     public List<OrderFood> orderList(String openid){
@@ -179,7 +194,9 @@ public Boolean orderPrompt(){
         orderFoodExample.createCriteria().andOpenidEqualTo(openid);
         orderFoodExample.setOrderByClause("order_id DESC");
         return orderFoodMapper.selectByExample(orderFoodExample);
+
     }
+
     @RequestMapping("/orderDetail")
     @ResponseBody
     public List<OrderDetail> orderDetail(String orderId){
