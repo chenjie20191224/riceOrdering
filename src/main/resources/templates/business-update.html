@@ -52,10 +52,10 @@
                                         <form class="layui-form" id="商家名称" action="/businessUpdate?msg=商家名称">
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input th:value="${business.getBusinessName()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="L_email" name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input th:value="${business.getBusinessName()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="businessName" name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
                                                <input th:value="商家名称" name="msg" hidden>
                                             </div>
-                                            <div> <button style="float: right;" type="submit" class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="" lay-submit="">更新</button></div>
+                                            <div> <button style="float: right;" onclick="Submit2('商家名称','businessName')"  class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="name" lay-submit="">更新</button></div>
                                         </div>
 
                                     </form>
@@ -127,10 +127,10 @@
                                     <form class="layui-form" id="配送时间" action="/businessUpdate">
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input th:value="${business.getDeliveryTime()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text"  name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input th:value="${business.getDeliveryTime()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="deliveryTime"  name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
                                                 <input th:value="配送时间" name="msg" hidden>
                                             </div>
-                                            <div> <button style="float: right;" type="submit" class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="" lay-submit="">更新</button></div>
+                                            <div> <button style="float: right;" onclick="Submit2('配送时间','deliveryTime')" class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="name" lay-submit="">更新</button></div>
                                         </div>
 
                                     </form>
@@ -157,10 +157,10 @@
                                     <form class="layui-form" id="商家活动" action="/businessUpdate">
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input th:value="${business.getActivity()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text"  name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input th:value="${business.getActivity()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="activity" name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
                                                 <input th:value="商家活动" name="msg" hidden>
                                             </div>
-                                            <div> <button style="float: right;" type="submit" class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="" lay-submit="">更新</button></div>
+                                            <div> <button style="float: right;" onclick="Submit2('商家活动','activity')" class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="name" lay-submit="">更新</button></div>
                                         </div>
 
                                     </form>
@@ -172,10 +172,10 @@
                                     <form class="layui-form" id="商家地址" action="/businessUpdate">
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input th:value="${business.getAddress()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text"  name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input th:value="${business.getAddress()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="address"  name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
                                                 <input th:value="商家地址" name="msg" hidden>
                                             </div>
-                                            <div> <button style="float: right;" type="submit" class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="" lay-submit="">更新</button></div>
+                                            <div> <button style="float: right;" onclick="Submit2('商家地址','address')" class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="name" lay-submit="">更新</button></div>
                                         </div>
 
                                     </form>
@@ -202,10 +202,10 @@
                                     <form class="layui-form" id="配送服务" action="/businessUpdate">
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input th:value="${business.getDeliveryService()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id=""  name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input th:value="${business.getDeliveryService()}" style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="deliveryService"  name="input" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
                                                 <input th:value="配送服务" name="msg" hidden>
                                             </div>
-                                            <div> <button style="float: right;" type="submit" class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="" lay-submit="">更新</button></div>
+                                            <div> <button style="float: right;" onclick="Submit2('配送服务','deliveryService')" class="layui-btn layui-btn-normal layui-btn-mini" lay-filter="name" lay-submit="">更新</button></div>
                                         </div>
 
                                     </form>
@@ -218,7 +218,7 @@
                                     <td th:if="${!business.getBusinessLicense().equals('空')}">
                                         <img class="pimg" th:src="${business.getBusinessLicense()}" style="width:200px;height: 80px" alt="">
 
-                                        <a style="float: right" title="编辑"  onclick="xadmin.open('编辑','/bannerEdit?banners=营业资质',650,450)" href="javascript:;">
+                                        <a style="float: right" title="编辑"  th:onclick="xadmin.open('编辑','/bannerEdit?banners=营业资质&src='+[[${business.getBusinessLicense()}]],650,450)" href="javascript:;">
                                             <span class="layui-btn layui-btn-normal layui-btn-mini">更新</span>
                                         </a>
                                     </td>
@@ -239,7 +239,6 @@
                         var  layer = layui.layer;
                        layer.msg("请输入数字！",{icon:2,time:1000});
                     });
-
                 }
                 else if (num.length==0){
                     layui.use( 'layer', function(){
@@ -256,10 +255,26 @@
                         });
                     })
 
-
+                }
+            }
+            function Submit2(t,input){
+                var num= document.getElementById(input).value;
+                 if (num.length==0){
+                    layui.use( 'layer', function(){
+                        var  layer = layui.layer;
+                        layer.msg("不能为空！",{icon:2,time:1000});
+                    });
+                } else {
+                    layer.confirm("确认更新"+t+"?",function () {
+                        layui.use( 'layer', function(){
+                            var  layer = layui.layer;
+                            layer.alert("更新成功",function () {
+                                document.getElementById(t).submit();
+                            })
+                        });
+                    })
 
                 }
-
             }
             layui.use(['laydate','form', 'layer'], function(){
                 $ = layui.jquery;
