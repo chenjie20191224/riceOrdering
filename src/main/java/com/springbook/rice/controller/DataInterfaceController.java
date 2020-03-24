@@ -1,10 +1,13 @@
 package com.springbook.rice.controller;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.springbook.rice.common.domain.*;
 import com.springbook.rice.common.utils.HttpXmlClient;
 import com.springbook.rice.common.utils.JSONBusiness;
 import com.springbook.rice.common.utils.JSONMenu;
+import com.springbook.rice.common.utils.JSONOrderList;
 import com.springbook.rice.mapper.*;
 import com.springbook.rice.service.CategoryFoodService;
 import com.springbook.rice.service.FoodService;
@@ -196,13 +199,33 @@ public class DataInterfaceController {
 
 
 
-    @RequestMapping("/orderList")
+//    @RequestMapping("/orderList")
+//    @ResponseBody
+//    public List<OrderFood> orderList(String openid){
+//        OrderFoodExample orderFoodExample=new OrderFoodExample();
+//        orderFoodExample.createCriteria().andOpenidEqualTo(openid);
+//        orderFoodExample.setOrderByClause("order_id DESC");
+//        List<OrderFood> orderFoods = orderFoodMapper.selectByExample(orderFoodExample);
+//        return orderFoods;
+//
+//    }
+
+    @RequestMapping("/orderListPage")
     @ResponseBody
-    public List<OrderFood> orderList(String openid){
+    public JSONOrderList orderListPage(String openid, Integer pageNum, Integer pageSize){
+
+        JSONOrderList jsonOrderList=new JSONOrderList();
         OrderFoodExample orderFoodExample=new OrderFoodExample();
         orderFoodExample.createCriteria().andOpenidEqualTo(openid);
         orderFoodExample.setOrderByClause("order_id DESC");
-        return orderFoodMapper.selectByExample(orderFoodExample);
+        List<OrderFood> orderFoods = orderFoodMapper.selectByExample(orderFoodExample);
+        PageHelper.startPage(pageNum , pageSize);
+        List<OrderFood> orderFoods2 = orderFoodMapper.selectByExample(orderFoodExample);
+        PageInfo<OrderFood> personPageInfo = new PageInfo<>(orderFoods2);
+        List<OrderFood> pageList = personPageInfo.getList();
+        jsonOrderList.setOrderFoods(pageList);
+        jsonOrderList.setTotalPage(orderFoods.size());
+        return jsonOrderList;
 
     }
 
