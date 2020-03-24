@@ -22,29 +22,7 @@
 
                    var momth=((date .getMonth()==0?12:date .getMonth())<10?"0"+date .getMonth():date .getMonth());
                    // setInterval(function () {
-                       //菜品数
-                       $.ajax({
-                           type : "get",
-                           url : "/getFood_num",
-                           dataType : "text",
-                           success : function(result) {
-                               document.getElementById('food_num').innerHTML=result;
-                           }
-                       });
-                       //上个月销售额
-                       var momth=((date .getMonth()==0?12:date .getMonth())<10?"0"+date .getMonth():date .getMonth());
-                       $.ajax({
-                           type : "get",
-                           url : "/getOrder_sales",
-                           data :{
-                               start :date .getFullYear() + "-" + momth +"-01",
-                               end :date .getFullYear() + "-" + momth +"-31"
-                           },
-                           dataType : "text",
-                           success : function(result) {
-                               document.getElementById('month_last_sales').innerHTML=result;
-                           }
-                       });
+
                        //本月销售额
                        $.ajax({
                            type : "get",
@@ -80,8 +58,30 @@
                                document.getElementById('order_de').innerHTML=result;
                            }
                        });
-                   // },1000)
-
+                   // },1000);
+                   //菜品数
+                   $.ajax({
+                       type : "get",
+                       url : "/getFood_num",
+                       dataType : "text",
+                       success : function(result) {
+                           document.getElementById('food_num').innerHTML=result;
+                       }
+                   });
+                   //上个月销售额
+                   var momth=((date .getMonth()==0?12:date .getMonth())<10?"0"+date .getMonth():date .getMonth());
+                   $.ajax({
+                       type : "get",
+                       url : "/getOrder_sales",
+                       data :{
+                           start :date .getFullYear() + "-" + momth +"-01",
+                           end :date .getFullYear() + "-" + momth +"-31"
+                       },
+                       dataType : "text",
+                       success : function(result) {
+                           document.getElementById('month_last_sales').innerHTML=result;
+                       }
+                   });
                    //获取营业状态
                    $.ajax({
                        type : "get",

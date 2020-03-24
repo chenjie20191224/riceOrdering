@@ -5,18 +5,18 @@ import com.springbook.rice.common.domain.*;
 import com.springbook.rice.common.utils.HttpXmlClient;
 import com.springbook.rice.common.utils.JSONBusiness;
 import com.springbook.rice.common.utils.JSONMenu;
-import com.springbook.rice.mapper.AddressMapper;
-import com.springbook.rice.mapper.BusinessMapper;
-import com.springbook.rice.mapper.OrderDetailMapper;
-import com.springbook.rice.mapper.OrderFoodMapper;
+import com.springbook.rice.mapper.*;
 import com.springbook.rice.service.CategoryFoodService;
 import com.springbook.rice.service.FoodService;
+import com.springbook.rice.service.PrinterService;
+import org.apache.http.client.ClientProtocolException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -26,6 +26,7 @@ import java.util.Map;
 public class DataInterfaceController {
     Boolean newOder=false;
     Boolean load=false;
+
     @Autowired
     FoodService foodService;
     @Autowired
@@ -38,7 +39,20 @@ public class DataInterfaceController {
     OrderFoodMapper orderFoodMapper;
     @Autowired
     OrderDetailMapper orderDetailMapper;
+    @Autowired
+    PrinterService printerService;
+    @Autowired
+    PrinterNewMapper printerNewMapper;
 
+
+
+//    {
+//        PrinterNew printerNew = printerNewMapper.selectByPrimaryKey(1);
+//        businessName=businessMapper.selectByPrimaryKey(1).getBusinessName();
+//        deviceid=printerNew.getDeviceidid();
+//        devicesecret=printerNew.getDevicesecret();
+//
+//    }
     //    局部刷新订单
     @RequestMapping("/load")
     @ResponseBody
@@ -179,12 +193,7 @@ public class DataInterfaceController {
         return orderDetailMapper.insertSelective(orderDetail);
    }
 
-    @RequestMapping("/Printer")
-    @ResponseBody
-    public void Printer(String orderId){
 
-
-    }
 
 
     @RequestMapping("/orderList")

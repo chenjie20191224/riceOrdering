@@ -37,6 +37,9 @@ public class BusinessController {
     public String businessUpdate(Model model) {
 //        向前端传递商家信息
         Business business = businessMapper.selectByPrimaryKey(1);
+        if (business==null){
+            business=new Business();
+        }
         model.addAttribute("business", business);
         return "business-update";
     }

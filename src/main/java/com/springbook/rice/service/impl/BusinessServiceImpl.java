@@ -30,6 +30,11 @@ public class BusinessServiceImpl implements BusinessService {
 
 //    更新商家信息
     public int updateAttribute(String attribute,String newAttribute){
+        if (businessMapper.selectByPrimaryKey(1)==null){
+            Business business=new Business();
+            business.setBusinessId(1);
+            businessMapper.insertSelective(business);
+        }
         Business business=new Business();
         switch (attribute){
             case "商家名称": business.setBusinessName(newAttribute);break;

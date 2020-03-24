@@ -43,11 +43,29 @@
 
                     <div class="layui-form-item">
                         <label for="L_repass" class="layui-form-label"></label>
+                        <div style="display: flex">
+
+                        </div>
                         <button class="layui-btn" lay-filter="add" lay-submit="">确认</button></div>
                 </form>
+                <button class="layui-btn" style="width: 200px;margin-left: 100px;margin-top: 30px" onclick="printerTest()">测试</button>
             </div>
         </div>
-        <script>layui.use(['form', 'layer','jquery'],
+        <script>
+            function printerTest(){
+                $.ajax({
+                    url:"/printerTest",
+                    data: {
+                        deviceidid:document.getElementById("deviceidid").value,
+                        devicesecret: document.getElementById("devicesecret").value
+                    },
+                    success:function (result) {
+                        console.log(result)
+                     layer.alert(result.msg);
+                    }
+                })
+            }
+            layui.use(['form', 'layer','jquery'],
             function() {
                 $ = layui.jquery;
                 var form = layui.form,
