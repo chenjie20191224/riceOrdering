@@ -39,7 +39,10 @@ public class BusinessController {
         Business business = businessMapper.selectByPrimaryKey(1);
         if (business==null){
             business=new Business();
+            business.setBusinessId(1);
+            businessMapper.insertSelective(business);
         }
+
         model.addAttribute("business", business);
         return "business-update";
     }
@@ -66,7 +69,12 @@ public class BusinessController {
 //轮盘管理
     @RequestMapping("/banner")
     public String banner(Model model) {
-        model.addAttribute(businessMapper.selectByPrimaryKey(1));
+        Business business = businessMapper.selectByPrimaryKey(1);
+        if (business==null){
+            business=new Business();
+        }
+
+        model.addAttribute("business",business);
       return "banner-list";
     }
 

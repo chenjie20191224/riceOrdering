@@ -40,8 +40,8 @@
                 <tbody id="x-img">
                     <tr>
                         <td>
-                            <img  th:if="${business.getChart1().equals('空')}" src="./banner/images/banner.png" width="200" alt="">
-                            <img  th:if="${!business.getChart1().equals('空')}" th:src="${business.getChart1()}" width="200" alt="">
+                            <img  th:if="${business.getChart1()==null}" src="./banner/images/banner.png" width="200" alt="">
+                            <img  th:if="${!(business.getChart1()==null)}" th:src="${business.getChart1()}" width="200" alt="">
                             点击图片试试
                         </td>
                         <td th:text="${business.getChart1()}">
@@ -57,8 +57,8 @@
                     <tr>
 
                         <td>
-                            <img  th:if="${business.getChart2().equals('空')}" src="./banner/images/banner.png" width="200" alt="">
-                            <img  th:if="${!business.getChart2().equals('空')}" th:src="${business.getChart2()}" width="200" alt="">
+                            <img  th:if="${business.getChart2()==null}" src="./banner/images/banner.png" width="200" alt="">
+                            <img  th:if="${!(business.getChart2()==null)}" th:src="${business.getChart2()}" width="200" alt="">
                             点击图片试试
                         </td>
                         <td th:text="${business.getChart2()}">
@@ -74,8 +74,8 @@
                     <tr>
 
                         <td>
-                            <img  th:if="${business.getChart3().equals('空')}" src="./banner/images/banner.png" width="200" alt="">
-                            <img  th:if="${!business.getChart3().equals('空')}" th:src="${business.getChart3()}" width="200" alt="">
+                            <img  th:if="${business.getChart3()==null}" src="./banner/images/banner.png" width="200" alt="">
+                            <img  th:if="${!(business.getChart3()==null)}" th:src="${business.getChart3()}" width="200" alt="">
                             点击图片试试
                         </td>
                         <td th:text="${business.getChart3()}">

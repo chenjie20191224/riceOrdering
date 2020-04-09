@@ -40,6 +40,7 @@ public class foodListController {
         List<Food> foods=foodService.selectAll();
         if (category!=null){
              foods = foodService.selectByCategory(category);
+
         }
         if (category==null||category.equals("所有类别")){
             foodService.selectByCategory("初始化菜品类别下拉框的选择状态");

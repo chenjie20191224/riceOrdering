@@ -25,7 +25,11 @@ public class WelcomeController {
     @RequestMapping("/getBusinessStatus")
     @ResponseBody
     public Boolean getBusinessStatus(){
-        return businessMapper.selectByPrimaryKey(1).getBusinessStatus();
+        Business business = businessMapper.selectByPrimaryKey(1);
+        if (business==null){
+            return false;
+        }
+        return business.getBusinessStatus();
     }
     @RequestMapping("/setBusinessStatus")
     @ResponseBody
