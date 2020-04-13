@@ -2,7 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.springbook.rice.mapper.AdminMapper">
   <resultMap id="BaseResultMap" type="com.springbook.rice.common.domain.Admin">
-    <id column="admin" jdbcType="VARCHAR" property="admin" />
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="admin" jdbcType="VARCHAR" property="admin" />
     <result column="password" jdbcType="VARCHAR" property="password" />
   </resultMap>
   <sql id="Example_Where_Clause">
@@ -64,7 +65,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    admin, password
+    id, admin, password
   </sql>
   <select id="selectByExample" parameterType="com.springbook.rice.common.domain.AdminExample" resultMap="BaseResultMap">
     select
@@ -80,15 +81,15 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from admin
-    where admin = #{admin,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from admin
-    where admin = #{admin,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
   </delete>
   <delete id="deleteByExample" parameterType="com.springbook.rice.common.domain.AdminExample">
     delete from admin
@@ -97,12 +98,17 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.springbook.rice.common.domain.Admin">
-    insert into admin (admin, password)
-    values (#{admin,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR})
+    insert into admin (id, admin, password
+      )
+    values (#{id,jdbcType=INTEGER}, #{admin,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="com.springbook.rice.common.domain.Admin">
     insert into admin
     <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
       <if test="admin != null">
         admin,
       </if>
@@ -111,6 +117,9 @@
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
       <if test="admin != null">
         #{admin,jdbcType=VARCHAR},
       </if>
@@ -128,6 +137,9 @@
   <update id="updateByExampleSelective" parameterType="map">
     update admin
     <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
       <if test="record.admin != null">
         admin = #{record.admin,jdbcType=VARCHAR},
       </if>
@@ -141,7 +153,8 @@
   </update>
   <update id="updateByExample" parameterType="map">
     update admin
-    set admin = #{record.admin,jdbcType=VARCHAR},
+    set id = #{record.id,jdbcType=INTEGER},
+      admin = #{record.admin,jdbcType=VARCHAR},
       password = #{record.password,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -150,15 +163,19 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.springbook.rice.common.domain.Admin">
     update admin
     <set>
+      <if test="admin != null">
+        admin = #{admin,jdbcType=VARCHAR},
+      </if>
       <if test="password != null">
         password = #{password,jdbcType=VARCHAR},
       </if>
     </set>
-    where admin = #{admin,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
   </update>
   <update id="updateByPrimaryKey" parameterType="com.springbook.rice.common.domain.Admin">
     update admin
-    set password = #{password,jdbcType=VARCHAR}
-    where admin = #{admin,jdbcType=VARCHAR}
+    set admin = #{admin,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

@@ -32,16 +32,16 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table tableName="business" domainObjectName="Business"/>
-        <table tableName="food" domainObjectName="Food"/>
-        <table tableName="user" domainObjectName="User"/>
-        <table tableName="order_food" domainObjectName="OrderFood"/>
-        <table tableName="order_detail" domainObjectName="OrderDetail"/>
-        <table tableName="comment" domainObjectName="Comment"/>
+<!--        <table tableName="business" domainObjectName="Business"/>-->
+<!--        <table tableName="food" domainObjectName="Food"/>-->
+<!--        <table tableName="user" domainObjectName="User"/>-->
+<!--        <table tableName="order_food" domainObjectName="OrderFood"/>-->
+<!--        <table tableName="order_detail" domainObjectName="OrderDetail"/>-->
+<!--        <table tableName="comment" domainObjectName="Comment"/>-->
         <table tableName="admin" domainObjectName="Admin"/>
-        <table tableName="category_food" domainObjectName="CategoryFood"/>
-        <table tableName="address" domainObjectName="Address"/>
-        <table tableName="printerNew" domainObjectName="PrinterNew"/>
+<!--        <table tableName="category_food" domainObjectName="CategoryFood"/>-->
+<!--        <table tableName="address" domainObjectName="Address"/>-->
+<!--        <table tableName="printerNew" domainObjectName="PrinterNew"/>-->
 
         <!--<table schema="DB2ADMIN" tableName="ALLTYPES" domainObjectName="Customer" >
             <property name="useActualColumnNames" value="true"/>
