@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -51,6 +52,8 @@ public class LoginController {
             Session.setCurrent(admin);
             Login.setSuccess(true);
             return Login;
+        }else {
+            Login.setMsg("账号或密码错误");
         }
         return Login;
     }
@@ -62,16 +65,55 @@ public class LoginController {
 //        return "forward:/itemEdit.action";
         return "redirect:/";
     }
-//管理员添加页面 admin-add
+    //管理员添加页面 admin-add
     @RequestMapping("/admin-add")
     public String admin_add() {
         return "admin-add";
     }
-    //管理员添加页面 admin-edit
+    //管理员修改密码页面 admin-edit
     @RequestMapping("/admin-edit")
     public String admin_edit() {
         return "admin-edit";
     }
+
+//    修改密码
+    @RequestMapping("/adminEdit")
+    @ResponseBody
+    public JSONResult adminEdit(String password,String newPassword,String rePassword) {
+        Admin current = Session.getCurrent();
+        System.out.println(current.getPassword());
+        JSONResult jsonResult=new JSONResult();
+//        旧密码是否正确
+        if (password.equals(current.getPassword())){
+//            两次输入的新密码是否一致
+            if (newPassword.equals(rePassword)){
+//                新旧密码是否一样
+                if(!password.equals(newPassword)){
+                    jsonResult.setSuccess(true);
+                    AdminExample adminExample=new AdminExample();
+                    adminExample.createCriteria().andAdminEqualTo(current.getAdmin());
+                    Admin admin=new Admin();
+                    admin.setPassword(newPassword);
+                    adminMapper.updateByExampleSelective(admin,adminExample);
+                }else {
+                    jsonResult.setSuccess(false);
+                    jsonResult.setMsg("新密码不能和原密码一样！");
+                }
+
+
+            }else {
+                jsonResult.setSuccess(false);
+                jsonResult.setMsg("密码不一致！");
+            }
+        }else {
+            jsonResult.setSuccess(false);
+            jsonResult.setMsg("旧密码不正确！");
+
+        }
+
+        return jsonResult;
+    }
+
 
 
     //显示用户名
