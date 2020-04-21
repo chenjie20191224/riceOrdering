@@ -38,9 +38,11 @@ public class BusinessController {
 //        向前端传递商家信息
         Business business = businessMapper.selectByPrimaryKey(1);
         if (business==null){
-            business=new Business();
-            business.setBusinessId(1);
-            businessMapper.insertSelective(business);
+//            business=new Business();
+//            business.setBusinessId(1);
+//            businessMapper.insertSelective(business);
+//            model.addAttribute("business", business);
+            return "business-add";
         }
 
         model.addAttribute("business", business);
@@ -57,7 +59,14 @@ public class BusinessController {
         }
         return "business-edit";
     }
-
+    //添加商家
+    @RequestMapping("/businessAdd")
+    public String businessAdd(Business business) {
+        System.out.println(business.getBusinessName());
+        System.out.println(business.getTelephone());
+        businessService.addBusiness(business);
+        return "redirect:/business-update";
+    }
     //更新商家信息
     @RequestMapping("/businessUpdate")
     public String businessUPdate(String msg,String input) {
@@ -83,6 +92,9 @@ public class BusinessController {
     public String bannerEdit(String banners,String src,Model model) {
         model.addAttribute("src",src);
         this.msg=banners;
+        if (banners.equals("营业资质2")){
+            return "banner-edit2";
+        }
         return "banner-edit";
 
     }

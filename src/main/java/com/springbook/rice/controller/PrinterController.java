@@ -68,7 +68,7 @@ public class PrinterController {
         System.out.println(data);
         Boolean printer = printerService.printer(data, printerNew.getDeviceidid(), printerNew.getDevicesecret());
         if (printer){
-            jsonResult.setMsg("云打印请求成功，若打印机无反应，请检查‘设备ID’、‘设备密钥’是否正确和云打印机是否能正常使用！");
+            jsonResult.setMsg("请求成功，若打印机无响应，请检查‘设备ID’、‘设备密钥’是否正确和云打印机是否能正常使用！");
             jsonResult.setSuccess(true);
         }else {
             jsonResult.setMsg("云打印请求失败，请联系系统维护员进行检查！");

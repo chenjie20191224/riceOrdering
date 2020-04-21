@@ -21,13 +21,23 @@ public class BusinessServiceImpl implements BusinessService {
     @Autowired
     FoodMapper foodMapper;
 
-    MultipartFile file;
+    MultipartFile file=null;
 
 //    确认轮播图和营业资质是否选择（上传）
     Boolean photosConfirm=false;
 
     BusinessExample businessExample=new BusinessExample();
 
+//    添加商家
+    public int addBusiness(Business business){
+        business.setBusinessId(1);
+        if (file!=null){
+            business.setBusinessLicense("/photos/"+file.getOriginalFilename());
+            file=null;
+        }
+
+        return businessMapper.insertSelective(business);
+    }
 //    更新商家信息
     public int updateAttribute(String attribute,String newAttribute){
         if (businessMapper.selectByPrimaryKey(1)==null){
@@ -75,11 +85,13 @@ public class BusinessServiceImpl implements BusinessService {
         }
          Business business=new Business();
         switch (banners){
+            case "营业资质2":return jsonResult;
             case "营业资质":business.setBusinessLicense("/photos/"+file.getOriginalFilename());break;
             case "chart1":business.setChart1("/photos/"+file.getOriginalFilename());break;
             case "chart2":business.setChart2("/photos/"+file.getOriginalFilename());break;
             case "chart3":business.setChart3("/photos/"+file.getOriginalFilename());break;
         }
+        file=null;
         businessMapper.updateByExampleSelective(business,businessExample);
         return jsonResult;
     }
