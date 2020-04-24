@@ -64,6 +64,7 @@ public class BusinessController {
     public String businessAdd(Business business) {
         System.out.println(business.getBusinessName());
         System.out.println(business.getTelephone());
+        System.out.println(business.getStartDelivery());
         businessService.addBusiness(business);
         return "redirect:/business-update";
     }
