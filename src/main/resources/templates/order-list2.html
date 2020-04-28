@@ -73,10 +73,17 @@
                                 </div>
                             </form>
                         </div>
+                        <div class="layui-card-header">
+                            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
+
+                        </div>
                         <div class="layui-card-body " id="autore">
                             <table class="layui-table layui-form">
                                 <thead>
                                 <tr>
+                                    <th>
+                                        <input type="checkbox" lay-filter="checkall" name="" lay-skin="primary">
+                                    </th>
                                     <th>订单编号</th>
                                     <th>姓名</th>
                                     <th>手机号</th>
@@ -88,6 +95,9 @@
                                 </thead>
                                 <tbody id="tbody">
                                   <tr th:each="order:${orderFoods}">
+                                      <td>
+                                          <input type="checkbox" name="id" th:value="${order.getOrderId()}" value="" lay-skin="primary">
+                                      </td>
                                     <td th:text="${order.getOrderId()}">2017009171822298053</td>
                                     <td th:text="|${order.getUserName()} [${order.getSex()}]|">老王:18925139194</td>
                                     <td th:text="${order.getTelephone()}">7829.10</td>
@@ -245,8 +255,79 @@
              return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
         });
 
-
-
     </script>
+    <script>
 
+        layui.use(['laydate','form'], function(){
+            var laydate = layui.laydate;
+            // 监听下拉选择
+            var  form = layui.form;
+            form.on('select()', function(data){
+                window.location.href="/food-list?category="+data.value;
+
+            });
+
+            //监听提交
+            form.on('submit(sreach)', function(data) {
+            });
+
+            // 监听全选
+            form.on('checkbox(checkall)', function(data){
+
+                if(data.elem.checked){
+                    $('tbody input').prop('checked',true);
+                }else{
+                    $('tbody input').prop('checked',false);
+                }
+                form.render('checkbox');
+            });
+
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#start' //指定元素
+            });
+
+            //执行一个laydate实例
+            laydate.render({
+                elem: '#end' //指定元素
+            });
+
+
+        });
+
+        /*用户-删除*/
+        function member_del(obj,id){
+            layer.confirm('确认要删除吗？',function(index){
+                //发异步删除数据
+
+                $(obj).parents("tr").remove();
+                //发异步，把数据提交给php
+                $.post("/foodDelet?foodNames="+id,index.field,function () {
+                });
+                layer.msg('已删除!',{icon:1,time:1000});
+            });
+        }
+
+
+
+        function delAll (argument) {
+            var ids = [];
+
+            // 获取选中的id
+            $('tbody input').each(function(index, el) {
+                if($(this).prop('checked')){
+                    ids.push($(this).val())
+                }
+            });
+
+            layer.confirm('确认要删除吗？'+ids.toString(),function(index){
+                //捉到所有被选中的，发异步进行删除
+                //发异步，把数据提交给php
+                $.post("/allDeleteOrder?orderIdList="+ids,index.field,function () {
+                });
+                layer.msg('删除成功', {icon: 1});
+                $(".layui-form-checked").not('.header').parents('tr').remove();
+            });
+        }
+    </script>
 </html>

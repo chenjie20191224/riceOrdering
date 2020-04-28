@@ -3,8 +3,10 @@ package com.springbook.rice.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.springbook.rice.common.domain.Food;
+import com.springbook.rice.common.domain.OrderDetailExample;
 import com.springbook.rice.common.domain.OrderFood;
 import com.springbook.rice.common.domain.OrderFoodExample;
+import com.springbook.rice.mapper.OrderDetailMapper;
 import com.springbook.rice.mapper.OrderFoodMapper;
 import com.springbook.rice.service.OrderingService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,8 @@ public class OrderingServiceImp implements OrderingService {
     List<OrderFood> sreachResult=null;
     @Autowired
     OrderFoodMapper orderFoodMapper;
+    @Autowired
+    OrderDetailMapper orderDetailMapper;
 //退款
     public Boolean refund(String orderId){
         OrderFood orderFood=new OrderFood();
@@ -141,5 +145,21 @@ public class OrderingServiceImp implements OrderingService {
     public void setPage(Integer pageNum,Integer pageSize){
         this.pageNum=pageNum;
         this.pageSize=pageSize;
+    }
+
+    //   删除订单
+    public  Integer allDelete(String[] orderIdList){
+        int delete=0;
+        OrderDetailExample orderDetailExample;
+        for (int i=0;i<orderIdList.length;i++){
+            System.out.println("删除"+orderIdList[i]);
+            if (orderFoodMapper.deleteByPrimaryKey(orderIdList[i])>=1){
+                orderDetailExample=new OrderDetailExample();
+                orderDetailExample.createCriteria().andOrderIdEqualTo(orderIdList[i]);
+                orderDetailMapper.deleteByExample(orderDetailExample);
+                delete++;
+            }
+        }
+        return delete;
     }
 }

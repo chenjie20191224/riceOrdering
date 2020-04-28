@@ -12,6 +12,6 @@ public interface OrderingService {
     Boolean refund(String orderId);
     List<OrderFood> selectOrderByStatus(String status);
     List<OrderFood> sreach(String start,String end,String orderId,String status);
-
+    Integer allDelete(String[] orderIdList);
 
 }

@@ -140,5 +140,12 @@ public class OrderingController {
         return jsonOrderNum;
     }
 
+//    删除订单
+    @RequestMapping("/allDeleteOrder")
+    @ResponseBody
+    public Integer allDeleteOrder(String[] orderIdList){
+
+        return orderingService.allDelete(orderIdList);
+    }
 
 }
