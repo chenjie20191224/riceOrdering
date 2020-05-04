@@ -260,16 +260,8 @@
 
         layui.use(['laydate','form'], function(){
             var laydate = layui.laydate;
-            // 监听下拉选择
-            var  form = layui.form;
-            form.on('select()', function(data){
-                window.location.href="/food-list?category="+data.value;
 
-            });
 
-            //监听提交
-            form.on('submit(sreach)', function(data) {
-            });
 
             // 监听全选
             form.on('checkbox(checkall)', function(data){
@@ -295,18 +287,7 @@
 
         });
 
-        /*用户-删除*/
-        function member_del(obj,id){
-            layer.confirm('确认要删除吗？',function(index){
-                //发异步删除数据
 
-                $(obj).parents("tr").remove();
-                //发异步，把数据提交给php
-                $.post("/foodDelet?foodNames="+id,index.field,function () {
-                });
-                layer.msg('已删除!',{icon:1,time:1000});
-            });
-        }
 
 
 

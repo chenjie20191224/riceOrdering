@@ -21,7 +21,7 @@
                $(function(){
 
                    var momth=((date .getMonth()==0?12:date .getMonth())<10?"0"+date .getMonth():date .getMonth());
-                   // setInterval(function () {
+                    setInterval(function () {
 
                        //本月销售额
                        $.ajax({
@@ -58,7 +58,8 @@
                                document.getElementById('order_de').innerHTML=result;
                            }
                        });
-                   // },1000);
+                       console.log("asd")
+                    },2000);
                    //菜品数
                    $.ajax({
                        type : "get",
