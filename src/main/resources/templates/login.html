@@ -79,7 +79,7 @@
                 <input id="Input" type="text" placeholder="请输入验证码" style="width: 40%">
                 <div class="code" id="checkCode" style="width:60px;height:30px;background-color:#D6E3BC;border:2px solid;text-align:center;font-size:24px;"></div>
                 <a id="btn" href="###">看不清，换一张</a>
-                <button id="subBtn">验证</button>
+                <button id="subBtn" style="display: none">验证</button>
             </div>
             <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
             <hr class="hr20" >
@@ -155,7 +155,7 @@
                     if (InputValue == code2) {
                         $.post("/login",data.field,function (data) {
                             if (data.success)
-                                layer.alert("登录成功", function () {
+                                layer.msg("登录成功", {time:500,icon:1},function () {
                                     location.href = '/'
                                 });
                             // layer.msg("登录成功",{icon:1},function () {
@@ -163,8 +163,7 @@
                             //
                             // });
                             else
-                                layer.msg(data.msg, function () {
-                                });
+                                layer.msg(data.msg, {icon:2});
                         });
 
                     } else {
