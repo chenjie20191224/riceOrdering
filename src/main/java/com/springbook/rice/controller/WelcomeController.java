@@ -22,6 +22,7 @@ public class WelcomeController {
     OrderingService orderingService;
     @Autowired
     FoodMapper foodMapper;
+//    获取店面信息
     @RequestMapping("/getBusinessStatus")
     @ResponseBody
     public Boolean getBusinessStatus(){
@@ -31,6 +32,7 @@ public class WelcomeController {
         }
         return business.getBusinessStatus();
     }
+//    设置店面营业状态
     @RequestMapping("/setBusinessStatus")
     @ResponseBody
     public void setBusinessStatus(Boolean businessStatus){
@@ -48,7 +50,7 @@ public class WelcomeController {
         orderExample.createCriteria().andOrderStateEqualTo("待配送");
         return orderFoodMapper.selectByExample(orderExample).size();
     }
-//
+//获取店面销售额
     @RequestMapping("/getOrder_sales")
     @ResponseBody
     public Double getOrder_sales(String start,String end){

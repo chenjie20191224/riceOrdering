@@ -1,5 +1,6 @@
 package com.springbook.rice.controller;
 
+import com.springbook.rice.common.domain.Business;
 import com.springbook.rice.common.domain.CategoryFood;
 import com.springbook.rice.common.domain.Food;
 import com.springbook.rice.common.domain.FoodExample;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Controller
@@ -57,7 +59,7 @@ public class foodListController {
         return "food-list";
     }
 
-
+//菜品修改页面
     @RequestMapping("/food-edit")
     public String foodEdit(String foodName,Model model){
         //  更新菜品封面前先清空之前的保存的封面
@@ -68,14 +70,15 @@ public class foodListController {
         model.addAttribute("categoryFoods",categoryFoods);
         return "food-edit";
     }
-
+//菜品添加页面
     @RequestMapping("/food-add")
     public String foodAdd(Model model){
         model.addAttribute("categoryFoods",categoryFoodService.selectAll());
-        model.addAttribute("packFEE",businessMapper.selectByPrimaryKey(1).getPackFee());
+        Business business = businessMapper.selectByPrimaryKey(1);
+        model.addAttribute("packFEE",business==null?0.5:business.getPackFee());
         return "food-add";
     }
-
+//菜品添加操作
     @RequestMapping("/foodAdd")
     @ResponseBody
     public void foodADD(Food food){

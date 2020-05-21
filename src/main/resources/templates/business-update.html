@@ -36,7 +36,9 @@
                 <div class="layui-col-md12">
                     <div class="layui-card">
 
-
+                        <div class="layui-card-header">
+                            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>删除商家信息</button>
+                        </div>
                         <div class="layui-card-body layui-table-body layui-table-main" style="display: flex;justify-content: center">
                             <table class="layui-table layui-form" style="width: 90%">
                                 <thead>
@@ -231,6 +233,31 @@
             </div>
         </div>
         <script>
+            var hiddenProperty = 'hidden' in document ? 'hidden' :
+
+                'webkitHidden' in document ? 'webkitHidden' :
+
+                    'mozHidden' in document ? 'mozHidden' :
+
+                        null;
+
+            var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
+
+            var onVisibilityChange = function(){
+
+                if (!document[hiddenProperty]) {
+
+                    console.log('我出现了');
+
+                }else{
+                    parent.location.reload() ;
+                    console.log('我隐藏了');
+
+                }
+
+            }
+
+            document.addEventListener(visibilityChangeEvent, onVisibilityChange);
             function Submit(t,input){
                 var num= document.getElementById(input).value;
                 if (isNaN(num)){
@@ -280,8 +307,6 @@
                 var laydate = layui.laydate;
                 var  form = layui.form,
                     layer = layui.layer;
-
-
 
                 //监听提交
                 form.on('submit(name)',
@@ -337,26 +362,35 @@
             }
 
 
-
-            function delAll (argument) {
-                var ids = [];
-
-                // 获取选中的id
-                $('tbody input').each(function(index, el) {
-                    if($(this).prop('checked')){
-                        ids.push($(this).val())
-                    }
-                });
-
-                layer.confirm('确认要删除吗？'+ids.toString(),function(index){
+            function delAll () {
+                layer.confirm('确认要删除商家的全部信息吗？',function(index){
                     //捉到所有被选中的，发异步进行删除
-                    layer.msg('删除成功', {icon: 1});
-                    $(".layui-form-checked").not('.header').parents('tr').remove();
+                    $.ajax({
+                        url: "/deleteBusiness",
+                        success: function (data) {
+                            if (data){
+                                layer.alert("删除成功！", {
+                                        icon: 6
+                                    },
+                                    function() {
+                                    location.reload()
+                                    });
+                            } else {
+                                layer.msg('删除失败', {icon: 1});
+                            }
+                        }
+                    })
+
                 });
             }
         </script>
+<!--        <script> var jq164 = jQuery.noConflict(true); </script>-->
+
 <!--        <script src="./banner/lib/layui/layui.js" charset="utf-8"></script>-->
+
+<!--        <script> var jq164 = jQuery.noConflict(true); </script>-->
         <script src="./banner/js/x-layui.js" charset="utf-8"></script>
+<!--        <script> var jq164 = jQuery.noConflict(true); </script>-->
         <script>
             layui.use(['laydate','element','laypage','layer'], function(){
                 $ = layui.jquery;//jquery

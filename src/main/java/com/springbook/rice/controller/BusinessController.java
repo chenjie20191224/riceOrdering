@@ -68,6 +68,13 @@ public class BusinessController {
         businessService.addBusiness(business);
         return "redirect:/business-update";
     }
+    //删除商家
+    @RequestMapping("/deleteBusiness")
+    @ResponseBody
+    public Boolean deleteBusiness(){
+        int i = businessMapper.deleteByPrimaryKey(1);
+        return i!=0?true:false;
+    }
     //更新商家信息
     @RequestMapping("/businessUpdate")
     public String businessUPdate(String msg,String input) {

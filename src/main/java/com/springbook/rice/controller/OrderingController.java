@@ -71,7 +71,6 @@ public class OrderingController {
 
     @RequestMapping("/order-list")
     public String orderList(Model model,String status,String orderId,String start,String end){
-
         if (status==null) {
             status=this.status;
         }
@@ -86,7 +85,6 @@ public class OrderingController {
             model.addAttribute("orderFoods",orderFoods);
             this.status=status;
         }
-
         model.addAttribute("status",status);
         return "order-list";
     }

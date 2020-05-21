@@ -30,7 +30,6 @@
                           autocomplete="off" class="layui-input">
                       </div>
                       <div class="layui-form-mid layui-word-aux">
-                          <span class="x-red">*</span>将会成为您唯一的登入名
                       </div>
                   </div>
 
@@ -40,7 +39,7 @@
                           <span class="x-red">*</span>新密码
                       </label>
                       <div class="layui-input-inline">
-                          <input type="password" id="L_pass" name="newPassword" required="" lay-verify="pass"
+                          <input type="password" id="L_pass" name="newPassword" required="" lay-verify="nikename"
                           autocomplete="off" class="layui-input">
                       </div>
                       <div class="layui-form-mid layui-word-aux">
@@ -52,7 +51,7 @@
                           <span class="x-red">*</span>确认密码
                       </label>
                       <div class="layui-input-inline">
-                          <input type="password" id="L_repass" name="repass" required="" lay-verify="pass"
+                          <input type="password" id="L_repass" name="repass" required="" lay-verify="nikename"
                           autocomplete="off" class="layui-input">
                       </div>
                   </div>
@@ -60,7 +59,7 @@
                       <label for="L_repass" class="layui-form-label">
                       </label>
                       <button  class="layui-btn" lay-filter="add" lay-submit="">
-                          增加
+                          修改密码
                       </button>
                   </div>
               </form>
@@ -77,6 +76,8 @@
                     nikename: function(value) {
                         if (value.length == 0) {
                             return '不能为空';
+                        }else if (value.length<6||value.length>12){
+                            return '密码必须6到12位';
                         }
                     },
                     pass: [/(.+){6,12}$/, '密码必须6到12位'],

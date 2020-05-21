@@ -87,9 +87,9 @@ public class BusinessServiceImpl implements BusinessService {
         switch (banners){
             case "营业资质2":return jsonResult;
             case "营业资质":business.setBusinessLicense("/photos/"+file.getOriginalFilename());break;
-            case "chart1":business.setChart1("/photos/"+file.getOriginalFilename());break;
-            case "chart2":business.setChart2("/photos/"+file.getOriginalFilename());break;
-            case "chart3":business.setChart3("/photos/"+file.getOriginalFilename());break;
+            case "chart1":business.setChart1("http://localhost:8080//photos/"+file.getOriginalFilename());break;
+            case "chart2":business.setChart2("http://localhost:8080//photos/"+file.getOriginalFilename());break;
+            case "chart3":business.setChart3("http://localhost:8080//photos/"+file.getOriginalFilename());break;
         }
         file=null;
         businessMapper.updateByExampleSelective(business,businessExample);

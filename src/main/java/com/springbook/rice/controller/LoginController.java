@@ -53,7 +53,7 @@ public class LoginController {
             Login.setSuccess(true);
             return Login;
         }else {
-            Login.setMsg("账号或密码错误");
+            Login.setMsg("管理员名或密码错误");
         }
         return Login;
     }
@@ -103,7 +103,7 @@ public class LoginController {
 
             }else {
                 jsonResult.setSuccess(false);
-                jsonResult.setMsg("密码不一致！");
+                jsonResult.setMsg("两次密码不一致！");
             }
         }else {
             jsonResult.setSuccess(false);

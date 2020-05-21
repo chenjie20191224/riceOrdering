@@ -15,6 +15,52 @@
     <!--[if lt IE 9]>
       <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
       <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <style>
+        .box {
+            width:300px;
+            height:150px;
+            border:1px solid;
+            margin:30px auto;
+            position:relative;
+        }
+        .code {
+            width:120px;
+            height:40px;
+            background-color:#D6E3BC;
+            border:2px solid;
+            text-align:center;
+            font-size:24px;
+            line-height:40px;
+            position:absolute;
+            top:20px;
+            left:20px;
+            letter-spacing:3px;
+        }
+        a {
+            position:absolute;
+            left:160px;
+            top:30px;
+            color:green;
+        }
+        input {
+            width:180px;
+            height:20px;
+            top:90px;
+            left:20px;
+            position:absolute;
+        }
+        button {
+            width:50px;
+            height:26px;
+            position:absolute;
+            top:90px;
+            right:26px;
+            background-color:green;
+            color:#fff;
+            border:1px solid gray;
+        }
+
+    </style>
     <![endif]-->
 </head>
 <body class="login-bg">
@@ -24,45 +70,117 @@
         <div id="darkbannerwrap"></div>
         
         <form method="post" class="layui-form">
-            <input name="admin" placeholder="用户名"  type="text" lay-verify="required" class="layui-input" >
+            <input name="admin" placeholder="管理员名"  type="text" lay-verify="required" class="layui-input" >
             <hr class="hr15">
             <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
             <hr class="hr15">
+            <div style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 20px">
+
+                <input id="Input" type="text" placeholder="请输入验证码" style="width: 40%">
+                <div class="code" id="checkCode" style="width:60px;height:30px;background-color:#D6E3BC;border:2px solid;text-align:center;font-size:24px;"></div>
+                <a id="btn" href="###">看不清，换一张</a>
+                <button id="subBtn">验证</button>
+            </div>
             <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
             <hr class="hr20" >
         </form>
     </div>
-
     <script>
+        /*实现点击“看不清，换一张”随机生成六位验证码（可包含数字和大小写字母）*/
+        this.code;
+        var code2="";
+        var Input = document.querySelector("#Input");
+        var btn = document.querySelector("#btn");
+        var subBtn = document.querySelector("#subBtn");
+
+        // window.onload = function() {
+            createCode();
+        // }
+
+        init();
+        function init() {
+            subBtn.onclick = function() {
+                isLegal()
+            }
+            btn.onclick = function() {
+                createCode();
+            }
+        }
+
+        // var yzm = {
+             function createCode() {
+                this.code = ""; //存放验证码
+                var codeLength = 4; //设置验证码长度为6
+                var checkCode = document.querySelector("#checkCode");
+                var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+                    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+                    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); //验证码要随机挑选的字符
+                for (var i = 0; i < codeLength; i++) {
+                    var charIndex = Math.floor(Math.random() * 52); //随机产生0-52之间的整数
+                    this.code += codeChars[charIndex]; //将随机指向我们规定的字符添加到code容器里
+                }
+                if (checkCode) {
+                    checkCode.className = "code";
+                    checkCode.innerHTML = this.code;
+                }
+
+                this.code2=this.code
+            }
+             function isLegal() {
+                var InputValue = Input.value;
+                /*console.log(InputValue);
+                console.log(this.code);*/
+                console.log(this.code);
+                if (InputValue == this.code) {
+                    alert("验证码正确!");
+                } else {
+                    alert("验证码不正确,请重试!");
+                }
+            }
+
+
+        // }
         $(function () {
             layui.use('form', function () {
                 var form = layui.form;
                 // layer.msg('玩命卖萌中', function(){
                 //   //关闭后的操作
                 //   });
+
                 //监听提交
                 form.on('submit(login)', function (data) {
-                    // alert(888)
-                    $.post("/login",data.field,function (data) {
-                        if (data.success)
-                            layer.alert("登录成功", function () {
-                                location.href = '/'
-                            });
+                    var InputValue = Input.value;
+                    console.log(InputValue);
+                    console.log(code2);
+                    if (InputValue == code2) {
+                        $.post("/login",data.field,function (data) {
+                            if (data.success)
+                                layer.alert("登录成功", function () {
+                                    location.href = '/'
+                                });
                             // layer.msg("登录成功",{icon:1},function () {
                             //     location.href = '/'
                             //
                             // });
+                            else
+                                layer.msg(data.msg, function () {
+                                });
+                        });
 
-
-                        else
-                            layer.msg(data.msg, function () {
-                            });
-                    });
-
+                    } else {
+                        // alert("验证码不正确,请重试!");
+                        layer.alert("验证码不正确,请重试!")
+                    }
+                    // alert(888)
                     return false;
+
+
                 });
             });
         })
+    </script>
+    <script>
+
     </script>
     <!-- 底部结束 -->
     <script>

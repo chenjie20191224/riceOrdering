@@ -35,7 +35,7 @@ public class PrinterController {
     String  businessName="";
     String deviceid="";
     String devicesecret="";
-
+//设置打印机
     @RequestMapping("/printerUpdate")
     @ResponseBody
     public JSONResult printerUpdate(PrinterNew printer){
@@ -59,7 +59,7 @@ public class PrinterController {
         model.addAttribute("printer",printerNew);
         return "printer";
     }
-
+//测试打印机
     @RequestMapping("/printerTest")
     @ResponseBody
     public JSONResult printerTest(PrinterNew printerNew) throws IOException {
@@ -77,7 +77,7 @@ public class PrinterController {
 //        jsonResult.setMsg("正在测试打印");
         return jsonResult;
     }
-
+//打印
     @RequestMapping("/Printer")
     @ResponseBody
     public void Printer(String orderId) throws ClientProtocolException, IOException {
