@@ -53,10 +53,18 @@ public class FileUtils {
         // 要上传的目标文件存放路径
         String localPath = "D:/工作文档/IDEA/Photos";
         // 上传成功或者失败的提示
-        if (FileUtils.upload(file, localPath, file.getOriginalFilename())){
+        String s;
+        if (file.getOriginalFilename().split("\\\\").length!=1){
+           s = file.getOriginalFilename().split("\\\\")[file.getOriginalFilename().split("\\\\").length - 1];
+        }else {
+            s=file.getOriginalFilename();
+        }
+
+        System.out.println(s);
+        if (FileUtils.upload(file, localPath, s)){
             // 上传成功，给出页面提示
             jsonPhotos.setMsg("上传成功！");
-            jsonPhotos.setUrl("/photos/"+file.getOriginalFilename());
+            jsonPhotos.setUrl("/photos/"+s);
 
         }else {
             jsonPhotos.setMsg("上传失败！");

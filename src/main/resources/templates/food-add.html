@@ -155,7 +155,7 @@
                     console.log('我出现了');
 
                 }else{
-                    parent.location.reload() ;
+
                     console.log('我隐藏了');
 
                 }
@@ -205,6 +205,7 @@
                                     var index = parent.layer.getFrameIndex(window.name);
                                     //关闭当前frame
                                     parent.layer.close(index);
+                                    parent.location.reload() ;
                                 });
 
                         else

@@ -23,8 +23,8 @@
                             if (s=="待配送"||s=="所有订单") {
                                 console.log("局部刷新"+document.getElementById("status2").value)
                                 //实现局部刷新，刷新当前页面某个元素   好用
-                                $("#autore").load(location.href + " #autore");
-                                // location.reload();
+                                // $("#autore").load(location.href + " #autore");
+                                location.reload();
                             }
 
                         }
@@ -120,7 +120,7 @@
                         </div>
                         <div class="layui-card-body ">
                             <div class="page">
-                                <div id="demo1"></div>
+                                <div id="demo4"></div>
                             </div>
                         </div>
                         </div>
@@ -174,7 +174,7 @@
                     curr=data.pages;
                     //不显示首页尾页
                     laypage.render({
-                        elem: 'demo1'
+                        elem: 'demo4'
                         , count: num
                         ,curr: location.hash.replace('#!fenye=', '') //获取起始页
                         ,hash: 'fenye' //自定义hash值

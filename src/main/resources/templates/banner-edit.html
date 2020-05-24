@@ -65,7 +65,7 @@
                     console.log('我出现了');
 
                 }else{
-                    parent.location.reload() ;
+
                     console.log('我隐藏了');
 
                 }
@@ -98,8 +98,8 @@
                               // 获得frame索引
                               var index = parent.layer.getFrameIndex(window.name);
                               //关闭当前frame
-                              window.location.reload();
                               parent.layer.close(index);
+                              parent.location.reload() ;
                           });
                       else
                           layer.msg("您还未选择图片！",{

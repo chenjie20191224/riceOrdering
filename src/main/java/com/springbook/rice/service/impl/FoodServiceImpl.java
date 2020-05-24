@@ -34,8 +34,9 @@ public class FoodServiceImpl implements FoodService {
 
 
     public JSONPhotos uploadPhotos(MultipartFile file){
-        System.out.println("上传菜品图片到本地");
+        System.out.println("上传菜品图片到本地,foodService");
         JSONPhotos jsonPhotos = FileUtils.uploadPhotos(file);
+        System.out.println(jsonPhotos.getUrl());
         this.foodIconUrl=jsonPhotos.getUrl();
         return jsonPhotos;
     }

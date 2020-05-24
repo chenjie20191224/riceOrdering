@@ -84,7 +84,11 @@ public class OrderingServiceImp implements OrderingService {
                orderFoodExample.createCriteria().andOrderTimeBetween(start,end);
            }
        }
-       orderFoodExample.setOrderByClause("order_id DESC");
+       if (status.equals("待配送")){
+           orderFoodExample.setOrderByClause("order_id ASC");
+       }else {
+           orderFoodExample.setOrderByClause("order_id DESC");
+       }
        List<OrderFood> orderFoods = orderFoodMapper.selectByExample(orderFoodExample);
        this.sreachResult=orderFoods;
        if (this.endCurr==null){

@@ -48,12 +48,12 @@
                             </thead>
                             <tbody id="x-img">
                             <tr>
-                                <td>商家21名称</td>
+                                <td>商家名称</td>
                                 <td>
 <!--                                    <form class="layui-form" id="商家名称" action="/businessUpdate?msg=商家名称">-->
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" name="businessName" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" name="businessName" required="" placeholder="店名"  lay-verify="nikename" autocomplete="off" class="layui-input">
                                                 <input th:value="商家名称" name="msg" hidden>
                                             </div>
                                             <div> </div>
@@ -68,7 +68,7 @@
 <!--                                    <form class="layui-form" id="商家电话" action="/businessUpdate">-->
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text"  name="telephone" required=""  lay-verify="num" autocomplete="off" class="layui-input">
+                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text"  name="telephone" required="" placeholder="给用户提供一个联系方式"  lay-verify="num" autocomplete="off" class="layui-input">
                                                 <input th:value="商家电话"  name="msg" hidden>
                                             </div>
                                             <div></div>
@@ -83,7 +83,7 @@
 <!--                                    <form class="layui-form" id="起送" action="/businessUpdate">-->
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text"   name="startDelivery" required=""  lay-verify="num" autocomplete="off" class="layui-input">
+                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text"   name="startDelivery" required=""  placeholder="对外卖进行配送的最低价" lay-verify="num" autocomplete="off" class="layui-input">
                                                 <input th:value="起送" id="1" name="msg" hidden>
                                             </div>
                                             <div></div>
@@ -98,7 +98,7 @@
                                     <form class="layui-form" id="配送" action="/businessUpdate">
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text"   name="deliveryFee" required=""  lay-verify="num" autocomplete="off" class="layui-input">
+                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text"   name="deliveryFee" required="" placeholder="配送外卖的跑路费" lay-verify="num" autocomplete="off" class="layui-input">
                                                 <input th:value="配送" name="msg" hidden>
                                             </div>
                                             <div></div>
@@ -128,7 +128,7 @@
 <!--                                    <form class="layui-form" id="配送时间" action="/businessUpdate">-->
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="deliveryTime"  name="deliveryTime" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="deliveryTime"  name="deliveryTime" required="" placeholder="配送外卖的时间段"  lay-verify="nikename" autocomplete="off" class="layui-input">
                                                 <input th:value="配送时间" name="msg" hidden>
                                             </div>
                                             <div> </div>
@@ -158,7 +158,7 @@
 <!--                                    <form class="layui-form" id="商家活动" action="/businessUpdate">-->
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="activity" name="activity" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="activity" name="activity" required="" placeholder="没什么特殊活动也可以通告一下营业时间" lay-verify="nikename" autocomplete="off" class="layui-input">
                                                 <input th:value="商家活动" name="msg" hidden>
                                             </div>
                                             <div> </div>
@@ -173,7 +173,7 @@
 <!--                                    <form class="layui-form" id="商家地址" action="/businessUpdate">-->
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="address"  name="address" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="address" placeholder="让顾客有个吃饭的去处吧"  name="address" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
                                                 <input th:value="商家地址" name="msg" hidden>
                                             </div>
                                             <div> </div>
@@ -188,7 +188,7 @@
 <!--                                    <form class="layui-form" id="配送范围" action="/businessUpdate">-->
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" id="4" type="text"  name="deliveryScope" required=""  lay-verify="num" autocomplete="off" class="layui-input">
+                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" id="4" type="text"  name="deliveryScope" placeholder="太远了就不配送外卖了" required=""  lay-verify="num" autocomplete="off" class="layui-input">
                                                 <input th:value="配送范围" name="msg" hidden>
                                             </div>
                                             <div> </div>
@@ -203,7 +203,7 @@
 <!--                                    <form class="layui-form" id="配送服务" action="/businessUpdate">-->
                                         <div class="layui-form-item">
                                             <div class="layui-input-inline">
-                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="deliveryService"  name="deliveryService" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
+                                                <input  style="border:0;outline: none;background-color: rgba(0, 0, 0, 0);" type="text" id="deliveryService" placeholder="一般都是自家配送"  name="deliveryService" required=""  lay-verify="nikename" autocomplete="off" class="layui-input">
                                                 <input th:value="配送服务" name="msg" hidden>
                                             </div>
                                             <div></div>

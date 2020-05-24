@@ -32,7 +32,7 @@ public class BusinessServiceImpl implements BusinessService {
     public int addBusiness(Business business){
         business.setBusinessId(1);
         if (file!=null){
-            business.setBusinessLicense("/photos/"+file.getOriginalFilename());
+            business.setBusinessLicense("/photos/"+file.getOriginalFilename().split("\\\\")[file.getOriginalFilename().split("\\\\").length - 1]);
             file=null;
         }
 
@@ -86,10 +86,10 @@ public class BusinessServiceImpl implements BusinessService {
          Business business=new Business();
         switch (banners){
             case "营业资质2":return jsonResult;
-            case "营业资质":business.setBusinessLicense("/photos/"+file.getOriginalFilename());break;
-            case "chart1":business.setChart1("http://localhost:8080//photos/"+file.getOriginalFilename());break;
-            case "chart2":business.setChart2("http://localhost:8080//photos/"+file.getOriginalFilename());break;
-            case "chart3":business.setChart3("http://localhost:8080//photos/"+file.getOriginalFilename());break;
+            case "营业资质":business.setBusinessLicense("/photos/"+file.getOriginalFilename().split("\\\\")[file.getOriginalFilename().split("\\\\").length - 1]);break;
+            case "chart1":business.setChart1("http://localhost:8080//photos/"+file.getOriginalFilename().split("\\\\")[file.getOriginalFilename().split("\\\\").length - 1]);break;
+            case "chart2":business.setChart2("http://localhost:8080//photos/"+file.getOriginalFilename().split("\\\\")[file.getOriginalFilename().split("\\\\").length - 1]);break;
+            case "chart3":business.setChart3("http://localhost:8080//photos/"+file.getOriginalFilename().split("\\\\")[file.getOriginalFilename().split("\\\\").length - 1]);break;
         }
         file=null;
         businessMapper.updateByExampleSelective(business,businessExample);
