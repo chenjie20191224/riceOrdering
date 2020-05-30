@@ -19,7 +19,7 @@
 <body>
 <div class="layui-fluid">
     <div class="layui-row">
-        <form class="layui-form" id="from" action="/foodUpdate" name="from">
+        <form class="layui-form">
             <div class="layui-form-item">
                 <label for="foodName" class="layui-form-label">
                     <span class="x-red">*</span>菜品名</label>
@@ -47,21 +47,21 @@
                 <label for="price" class="layui-form-label">
                     <span class="x-red">*</span>描述</label>
                 <div class="layui-input-inline">
-                    <input th:placeholder="${food.getDescrib()}" type="text" id="describ" name="describ" required="" lay-verify="nikename" autocomplete="off" class="layui-input"></div>
+                    <input th:value="${food.getDescrib()}" type="text" id="describ" name="describ" required="" lay-verify="nikename" autocomplete="off" class="layui-input"></div>
                 <div class="layui-form-mid layui-word-aux">
                     <span class="x-red">*</span>说说这道菜的特点</div></div>
             <div class="layui-form-item">
                 <label for="describe" class="layui-form-label">
                     <span class="x-red">*</span>价格</label>
                 <div class="layui-input-inline">
-                    <input th:placeholder="${food.getPrice()}" type="text" id="price" name="price" required="" lay-verify="num" autocomplete="off" class="layui-input"></div>
+                    <input th:value="${food.getPrice()}" type="text" id="price" name="price" required="" lay-verify="num" autocomplete="off" class="layui-input"></div>
                 <div class="layui-form-mid layui-word-aux">
                     <span class="x-red">*</span></div></div>
             <div class="layui-form-item">
                 <label for="packFee" class="layui-form-label">
                     <span class="x-red">*</span>包装费</label>
                 <div class="layui-input-inline">
-                    <input th:placeholder="${food.getPackFee()}" type="text" id="packFee" name="packFee" required="" lay-verify="num" autocomplete="off" class="layui-input"></div>
+                    <input th:value="${food.getPackFee()}" type="text" id="packFee" name="packFee" required="" lay-verify="num" autocomplete="off" class="layui-input"></div>
                 <div class="layui-form-mid layui-word-aux">
                     <span class="x-red">*</span></div></div>
             <div class="layui-form-item">
@@ -78,7 +78,7 @@
             <div class="layui-form-item">
                 <label for="L_repass" class="layui-form-label">
                 </label>
-                <button  class="layui-btn" lay-filter="add" lay-submit="">
+                <button  class="layui-btn" lay-filter="add" lay-submit="" style="background-color: #ee4b38">
                     更新
                 </button>
             </div>
@@ -140,31 +140,6 @@
     }
 </script>
 <script>
-    var hiddenProperty = 'hidden' in document ? 'hidden' :
-
-        'webkitHidden' in document ? 'webkitHidden' :
-
-            'mozHidden' in document ? 'mozHidden' :
-
-                null;
-
-    var visibilityChangeEvent = hiddenProperty.replace(/hidden/i, 'visibilitychange');
-
-    var onVisibilityChange = function(){
-
-        if (!document[hiddenProperty]) {
-
-            console.log('我出现了');
-
-        }else{
-
-            console.log('我隐藏了');
-
-        }
-
-    }
-
-    document.addEventListener(visibilityChangeEvent, onVisibilityChange);
     layui.use(['form', 'layer'],
     function() {
         $ = layui.jquery;
@@ -185,42 +160,76 @@
 
 
         //监听提交
-        form.on('submit(add)',
+        form.on('submit()',
             function(data) {
                 console.log(data);
                 //发异步，把数据提交给php
-                $.post("/foodNameVerify?foodName="+from.foodName.value+"&category="+from.CATEGORYY.value,data.field,function (data) {
-                    if (data.success){
-                        layer.alert("更新成功！", {
-                                icon: 6
-                            },
-                            function() {
-                                document.getElementById("from").submit()
-                                // 获得frame索引
-                                // window.location.reload();
-                                var index = parent.layer.getFrameIndex(window.name);
-                                //关闭当前frame
-                                parent.layer.close(index);
-                                parent.location.reload() ;
+                // $.post("/foodNameVerify?foodName="+from.foodName.value+"&category="+from.CATEGORYY.value,data.field,function (data) {
+                //     if (data.success){
+                //         layer.alert("更新成功！", {
+                //                 icon: 6
+                //             },
+                //             function() {
+                //             console.log("提交表单")
+                //                 document.getElementById("from").submit()
+                //                 // 获得frame索引
+                //                 // window.location.reload();
+                //                 var index = parent.layer.getFrameIndex(window.name);
+                //                 //关闭当前frame
+                //                 parent.layer.close(index);
+                //                 parent.location.reload() ;
+                //             });
+                //     }
+                //     else
+                //         layer.msg(data.msg,{
+                //             icon: 7
+                //         }, function () {
+                //         });
+                //
+                // });
+                console.log(data.field.foodName);
+                console.log(data.field.category);
+                var DATA=data;
+                $.ajax({
+                    url:"/foodNameVerify",
+                    data:{
+                        foodName:data.field.foodName,
+                        category:data.field.category
+                    },
+                    success:function (data) {
+                        if (data.success){
+                            layer.alert("更新成功！", {
+                                    icon: 6
+                                },
+                                function() {
+                                    console.log("提交表单");
+                                    $.ajax({
+                                        url:"/foodUpdate",
+                                        type:"post",
+                                        data:{
+                                            id:DATA.field.id,
+                                            foodName:DATA.field.foodName,
+                                            category:DATA.field.category,
+                                            price:DATA.field.price,
+                                            describ:DATA.field.describ,
+                                            packFee:DATA.field.packFee
+                                        }
+                                    })
+                                    // 获得frame索引
+                                    // window.location.reload();
+                                    var index = parent.layer.getFrameIndex(window.name);
+                                    //关闭当前frame
+                                    parent.layer.close(index);
+                                    parent.location.reload() ;
+                                });
+                        }
+                        else
+                            layer.msg(data.msg,{
+                                icon: 7
+                            }, function () {
                             });
                     }
-                    else
-                        layer.msg(data.msg,{
-                            icon: 7
-                        }, function () {
-                        });
-
-                });
-                // layer.alert("增加成功", {
-                //         icon: 6
-                //     },
-                //     function() {
-                //         document.getElementById("from").submit()
-                //         // 获得frame索引
-                //         var index = parent.layer.getFrameIndex(window.name);
-                //         //关闭当前frame
-                //         parent.layer.close(index);
-                //     });
+                })
                 return false;
             });
 

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/login.css">
 	  <link rel="stylesheet" href="./css/xadmin.css">
+    <link rel="stylesheet"  href="./css/theme80.min.css">
     <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="./lib/layui/layui.js" charset="utf-8"></script>
     <!--[if lt IE 9]>
@@ -79,7 +80,7 @@
                 <input id="Input" type="text" placeholder="请输入验证码" style="width: 40%">
                 <div class="code" id="checkCode" style="width:80px;height:30px;background-color:#D6E3BC;border:2px solid;text-align:center;font-size:24px;"></div>
                 <a id="btn" href="###">看不清，换一张</a>
-                <button id="subBtn" style="display: none">验证</button>
+<!--                <button id="subBtn" hidden>验证</button>-->
             </div>
             <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
             <hr class="hr20" >
@@ -91,7 +92,7 @@
         var code2="";
         var Input = document.querySelector("#Input");
         var btn = document.querySelector("#btn");
-        var subBtn = document.querySelector("#subBtn");
+        // var subBtn = document.querySelector("#subBtn");
 
         // window.onload = function() {
             createCode();
@@ -99,9 +100,9 @@
 
         init();
         function init() {
-            subBtn.onclick = function() {
-                isLegal()
-            }
+            // subBtn.onclick = function() {
+            //     isLegal()
+            // }
             btn.onclick = function() {
                 createCode();
             }
@@ -126,17 +127,17 @@
 
                 this.code2=this.code
             }
-             function isLegal() {
-                var InputValue = Input.value;
-                /*console.log(InputValue);
-                console.log(this.code);*/
-                console.log(this.code);
-                if (InputValue == this.code) {
-                    alert("验证码正确!");
-                } else {
-                    alert("验证码不正确,请重试!");
-                }
-            }
+            //  function isLegal() {
+            //     var InputValue = Input.value;
+            //     /*console.log(InputValue);
+            //     console.log(this.code);*/
+            //     console.log(this.code);
+            //     if (InputValue == this.code) {
+            //         alert("验证码正确!");
+            //     } else {
+            //         alert("验证码不正确,请重试!");
+            //     }
+            // }
 
 
         // }
@@ -155,9 +156,10 @@
                     if (InputValue == code2) {
                         $.post("/login",data.field,function (data) {
                             if (data.success)
-                                layer.msg("登录成功", {time:500,icon:1},function () {
+                                layer.msg("登录成功", {time:500,icon:-1},function () {
                                     location.href = '/'
                                 });
+                            //风格1的加载
                             // layer.msg("登录成功",{icon:1},function () {
                             //     location.href = '/'
                             //

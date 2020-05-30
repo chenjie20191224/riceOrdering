@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
         <link rel="stylesheet" href="../static/css/font.css" th:href="@{/css/font.css}">
         <link rel="stylesheet" href="../static/css/xadmin.css" th:href="@{/css/xadmin.css}">
+        <link rel="stylesheet" href="./css/xadmin.css" th:href="@{/css/theme80.min.css}">
         <script src="../static/lib/layui/layui.js" charset="utf-8" th:src="@{/lib/layui/layui.js}"></script>
         <script type="text/javascript" src="../static/js/xadmin.js" th:src="@{/js/xadmin.js}"></script>
           <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
@@ -128,7 +129,7 @@
         <div class="x-nav">
             <span class="layui-breadcrumb">
             </span>
-        <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+        <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right;background-color: orangered" onclick="location.reload()" title="刷新">
             <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
         </a>
     </div>
@@ -137,7 +138,7 @@
                 <div class="layui-col-md12">
                     <div class="layui-card">
                         <div class="layui-card-body ">
-                            <button type="button" onclick="setBusinessStatus()" class="layui-btn layui-btn-fluid" style="font-size: 30px;height: 50px;background-color: #31708f"><text id="businessStatus">正在营业</text></button>
+                            <button type="button" onclick="setBusinessStatus()" class="layui-btn layui-btn-fluid" style="font-size: 30px;height: 50px;background-color: #ee4b38"><text id="businessStatus">正在营业</text></button>
                         </div>
                     </div>
                 </div>

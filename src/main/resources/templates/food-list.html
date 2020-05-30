@@ -30,7 +30,7 @@
             <a>
               <cite>菜品管理</cite></a>
           </span>
-          <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+          <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right;background-color: orangered" onclick="location.reload()" title="刷新">
             <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i></a>
         </div>
         <div class="layui-fluid">
@@ -51,13 +51,13 @@
                                     <input type="text" name="foodName"  placeholder="请输入菜品名" autocomplete="off" class="layui-input">
                                 </div>
                                 <div class="layui-inline layui-show-xs-block">
-                                    <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
+                                    <button class="layui-btn"  lay-submit="" lay-filter="sreach" style="background-color: orangered"><i class="layui-icon">&#xe615;</i></button>
                                 </div>
                             </form>
                         </div>
                         <div class="layui-card-header">
                             <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
-                            <button class="layui-btn" onclick="xadmin.open('添加菜品','/food-add',900,600)"><i class="layui-icon"></i>添加</button>
+                            <button class="layui-btn" onclick="xadmin.open('添加菜品','/food-add',900,600)" style="background-color: orangered"><i class="layui-icon"></i>添加</button>
                         </div>
                         <div class="layui-card-body layui-table-body layui-table-main">
                             <table class="layui-table layui-form">

@@ -32,7 +32,7 @@
 .login .message {
     margin: 10px 0 0 -58px;
     padding: 18px 10px 18px 60px;
-    background: #189F92;
+    background: rgb(238, 93, 0);
     position: relative;
     color: #fff;
     font-size: 16px;
@@ -79,7 +79,7 @@
     vertical-align: middle;
     cursor: pointer;
     color: #ffffff;
-    background-color: #189F92;
+    background-color: rgb(238, 93, 0);
     border-radius: 3px;
     border: none;
     -webkit-appearance: none;
@@ -87,7 +87,7 @@
     width:100%;
 }
 .login hr {
-    background: #fff url() 0 0 no-repeat;
+    background: #fff  0 0 no-repeat;
 }
 .login hr.hr15 {
     height: 15px;

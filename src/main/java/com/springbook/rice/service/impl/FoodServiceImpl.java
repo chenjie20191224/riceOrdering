@@ -137,11 +137,8 @@ public class FoodServiceImpl implements FoodService {
            return jsonResult;
        }
 
-
-
-
         //        菜品名没有更新，不用验证
-        if (foodName==null){
+        if (foodName==null||foodName.equals("")){
             System.out.println("没有更新菜品名");
             jsonResult.setSuccess(true);
             return jsonResult;
@@ -150,7 +147,9 @@ public class FoodServiceImpl implements FoodService {
         if (selectByfoodName(foodName)!=null){
             jsonResult.setSuccess(false);
             jsonResult.setMsg("菜品已存在");
+            System.out.println("菜品已存在");
         }else {
+            System.out.println("菜品不存在");
             jsonResult.setSuccess(true);
         }
         return jsonResult;

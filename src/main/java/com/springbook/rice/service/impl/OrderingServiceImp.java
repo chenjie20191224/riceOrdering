@@ -84,7 +84,7 @@ public class OrderingServiceImp implements OrderingService {
                orderFoodExample.createCriteria().andOrderTimeBetween(start,end);
            }
        }
-       if (status.equals("待配送")){
+       if (status!=null&&status.equals("待配送")){
            orderFoodExample.setOrderByClause("order_id ASC");
        }else {
            orderFoodExample.setOrderByClause("order_id DESC");

@@ -69,25 +69,25 @@ public class OrderingController {
 
 
 
-    @RequestMapping("/order-list")
-    public String orderList(Model model,String status,String orderId,String start,String end){
-        if (status==null) {
-            status=this.status;
-        }
-        if (orderId!=null&&!(orderId.equals("")&&start.equals("")&&end.equals(""))){
-//            进行筛选
-            List<OrderFood> sreach = orderingService.sreach(start, end, orderId,this.status);
-            model.addAttribute("orderFoods",sreach);
-            model.addAttribute("sreach","sreach");
-        }else {
-//            进入页面
-            List<OrderFood> orderFoods = orderingService.selectOrder(status);
-            model.addAttribute("orderFoods",orderFoods);
-            this.status=status;
-        }
-        model.addAttribute("status",status);
-        return "order-list";
-    }
+//    @RequestMapping("/order-list")
+//    public String orderList(Model model,String status,String orderId,String start,String end){
+//        if (status==null) {
+//            status=this.status;
+//        }
+//        if (orderId!=null&&!(orderId.equals("")&&start.equals("")&&end.equals(""))){
+////            进行筛选
+//            List<OrderFood> sreach = orderingService.sreach(start, end, orderId,this.status);
+//            model.addAttribute("orderFoods",sreach);
+//            model.addAttribute("sreach","sreach");
+//        }else {
+////            进入页面
+//            List<OrderFood> orderFoods = orderingService.selectOrder(status);
+//            model.addAttribute("orderFoods",orderFoods);
+//            this.status=status;
+//        }
+//        model.addAttribute("status",status);
+//        return "order-list";
+//    }
 //    退款
     @RequestMapping("/refund")
     @ResponseBody

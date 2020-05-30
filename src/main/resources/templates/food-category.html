@@ -27,7 +27,7 @@
                 <a>
                     <cite>分类管理</cite></a>
             </span>
-            <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" onclick="location.reload()" title="刷新">
+            <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right;background-color: orangered" onclick="location.reload()" title="刷新">
                 <i class="layui-icon layui-icon-refresh" style="line-height:30px"></i>
             </a>
         </div>
@@ -40,7 +40,7 @@
                                 <div class="layui-input-inline layui-show-xs-block">
                                     <input class="layui-input" lay-verify="nikename" placeholder="分类名" name="cate_name"></div>
                                 <div class="layui-input-inline layui-show-xs-block">
-                                    <button class="layui-btn layui-btn layui-btn-xs"  lay-submit  lay-filter="categoryAdd"><i class="layui-icon"></i>增加</button>
+                                    <button class="layui-btn layui-btn layui-btn-xs"  lay-submit  lay-filter="categoryAdd" style="background-color: orangered"><i class="layui-icon"></i>增加</button>
                                 </div>
                             </form>
                         </div>
@@ -59,7 +59,7 @@
                                     产品管理
                                   </td>
                                   <td class="td-manage">
-                                    <button  class="layui-btn layui-btn layui-btn-xs"  th:onclick="category_up(this,[[${category.getCategory()}]])" href="javascript:;"><i class="layui-icon">&#xe642;</i>上移</button>
+                                    <button  class="layui-btn layui-btn layui-btn-xs" style="background-color: orangered"  th:onclick="category_up(this,[[${category.getCategory()}]])" href="javascript:;"><i class="layui-icon">&#xe642;</i>上移</button>
                                     <button  class="layui-btn layui-btn-warm layui-btn-xs"  th:onclick="category_dwon(this,[[${category.getCategory()}]])" href="javascript:;" ><i class="layui-icon">&#xe642;</i>下移</button>
                                     <button  class="layui-btn-danger layui-btn layui-btn-xs"  th:onclick="member_del(this,[[${category.getCategory()}]])" href="javascript:;" ><i class="layui-icon">&#xe640;</i>删除</button>
                                   </td>

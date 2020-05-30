@@ -86,10 +86,11 @@ public class foodListController {
     }
 
 //    菜品更新按钮点击  foodUpdate
-    @RequestMapping("/foodUpdate")
+    @PostMapping("/foodUpdate")
     @ResponseBody
     public void foodUpdate(Food food){
-        System.out.println("开始更新菜品：ID="+food.getId()+food.getFoodName());
+
+        System.out.println("开始更新菜品：ID"+food.getId());
         foodService.foodUpdate(food);
      }
 
@@ -126,7 +127,7 @@ public class foodListController {
         return foodService.foodVerify(foodName);
 }
 //菜品更新时验证更新的菜品名是否存在
-    @PostMapping("/foodNameVerify")
+    @RequestMapping("/foodNameVerify")
     @ResponseBody
     public JSONResult foodNameVerify(String foodName,String category) {
       String[] split = foodName.split(",");
